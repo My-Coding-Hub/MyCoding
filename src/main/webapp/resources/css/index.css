@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    paddibg: 0;
+    box-sizing: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/webapp/images/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    margin-top: -30px;
+}
+
+.div {
+    position: relative; /* Permite o uso de 'right' */
+    left: 20px; /* Move a div 200px para a direita */
+}
+
+.subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #008eed;
+}
+
+.introducao {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fim {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal; /* Não tão pesado como os outros */
+    line-height: 1.5; /* Melhor espaçamento entre as linhas para legibilidade */
+}
