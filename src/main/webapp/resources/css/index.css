@@ -1,43 +1,531 @@
 * {
     margin: 0;
-    paddibg: 0;
+    padding: 0;
     box-sizing: 0;
 }
 
-body {
+.fundo1 {
     width: 100vw;
-    height: 100vh;
-    background-image: url('/webapp/images/fundo.png');
-    background-size: cover;
+    height: 100vw;
+    background-image: url('#{resource['/images/fundo1.png']}');
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: top center; /* Alinha a imagem no topo */
+    position: relative;
 }
 
-.card {
-    margin-top: -30px;
-}
-
-.div {
-    position: relative; /* Permite o uso de 'right' */
-    left: 20px; /* Move a div 200px para a direita */
-}
-
-.subtitulo {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+.fundo1 .titulo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Reggae One;
     font-weight: bold;
+    font-size: 2vw;
     text-transform: uppercase;
-    color: #008eed;
+    color: white; /* Cor do texto */
 }
 
-.introducao {
-    font-family: Arial, sans-serif;
-    font-size: 50px;
+.fundo2 {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('#{resource['/images/fundo2.png']}');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -54.5%;
+}
+
+.fundo2 .titulo {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
     font-weight: bold;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
 }
 
-.fim {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal; /* Não tão pesado como os outros */
-    line-height: 1.5; /* Melhor espaçamento entre as linhas para legibilidade */
+.fundo2 .topico1 {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white; /* Cor do texto */
+}
+
+.fundo2 .topico2 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white; /* Cor do texto */
+}
+
+.fundo2 .topico3 {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white; /* Cor do texto */
+}
+
+.fundo2 .topico4 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white; /* Cor do texto */
+}
+
+.fundo2 .topico5 {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white; /* Cor do texto */
+}
+
+.fundo3 {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('#{resource['/images/fundo3.png']}');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -54.5%;
+}
+
+.fundo3 .tituloSite {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fundo3 .descricaoSite {
+    position: absolute;
+    top: 11%;
+    left: 71%;
+    transform: translate(-15%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white; /* Cor do texto */
+}
+
+.fundo3 .descricaoSite2 {
+    position: absolute;
+    top: 19%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white; /* Cor do texto */
+}
+
+.fundo3 .tituloSistema {
+    position: absolute;
+    top: 23%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fundo3 .descricaoSistema {
+    position: absolute;
+    top: 26%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema1-1 {
+    position: absolute;
+    top: 27.2%;
+    left: 27.2%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema1-2 {
+    position: absolute;
+    top: 28.5%;
+    left: 26.6%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema1-3 {
+    position: absolute;
+    top: 29.8%;
+    left: 26.7%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema2 {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema2-1 {
+    position: absolute;
+    top: 33.5%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema2-2 {
+    position: absolute;
+    top: 34.9%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema2-3 {
+    position: absolute;
+    top: 36.3%;
+    left: 30.5%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo3 .descricaoSistema2-4 {
+    position: absolute;
+    top: 37.8%;
+    left: 24.8%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('#{resource['/images/fundo4.png']}');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -54.5%;
+}
+
+.fundo4 .tituloApp {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fundo4 .descricaoApp {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp1-1 {
+    position: absolute;
+    top: 19.5%;
+    left: 26.5%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp1-2 {
+    position: absolute;
+    top: 21%;
+    left: 24.7%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp1-3 {
+    position: absolute;
+    top: 22.5%;
+    left: 26.6%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp1-4 {
+    position: absolute;
+    top: 24%;
+    left: 23.7%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp2 {
+    position: absolute;
+    top: 26.5%;
+    left: 25.2%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp2-1 {
+    position: absolute;
+    top: 28%;
+    left: 24.5%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp2-2 {
+    position: absolute;
+    top: 29.5%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoApp2-3 {
+    position: absolute;
+    top: 31%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .tituloEcommerce {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce {
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce1-1 {
+    position: absolute;
+    top: 19.5%;
+    left: 59.8%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce1-2 {
+    position: absolute;
+    top: 21%;
+    left: 60%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce1-3 {
+    position: absolute;
+    top: 22.5%;
+    left: 58.5%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce2 {
+    position: absolute;
+    top: 24.5%;
+    left: 59.7%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce2-1 {
+    position: absolute;
+    top: 26%;
+    left: 59.4%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce2-2 {
+    position: absolute;
+    top: 27.5%;
+    left: 60.2%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce2-3 {
+    position: absolute;
+    top: 29%;
+    left: 60.5%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo4 .descricaoEcommerce2-4 {
+    position: absolute;
+    top: 30.5%;
+    left: 56.2%;
+    transform: translate(-14%, -50%);
+    font-family: Tomorrow ;
+    font-weight: italic;
+    font-size: 1.1vw;
+    color: white;
+}
+
+.fundo5 {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('#{resource['/images/fundo5.png']}');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -54.5%;
+}
+
+.fundo5 .tituloPage {
+    position: absolute;
+    top: 9%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fundo5 .tituloIdeias {
+    position: absolute;
+    top: 22.5%;
+    left: 89.6%;
+    transform: translate(-50%, -50%);
+    font-family: Embed code;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: white;
 }
