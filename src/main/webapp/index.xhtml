@@ -6,15 +6,19 @@
 <h:head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&amp;display=swap" rel="stylesheet"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&amp;family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
-    <h:outputStylesheet name="css/index.css"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&amp;family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+          rel="stylesheet"/>
+
+    <!-- CSS do projeto -->
+    <h:outputStylesheet library="css" name="index.css"/>
+
     <title>My Coding</title>
 </h:head>
+
 
 <h:body>
     <h:form>
@@ -25,17 +29,17 @@
             </div>
 
             <div class="fundo2">
-                <p:outputLabel value="Desenvolvimento de Software, Sistemas e Soluções Para Internet"
+                <p:outputLabel value="Softwares, Sistemas, Projetos e Soluções Para Internet"
                                styleClass="subTitulo"/>
 
                 <p:outputLabel value="Qualidade, Eficiência e Comprometimento"
                                styleClass="tituloQualidade"/>
 
-                <p:outputLabel value="Tecnologia + Designer"
-                               styleClass="tituloTecnologia"/>
-
                 <p:outputLabel value="Comunicação e Planejamento com os Clientes"
                                styleClass="tituloClientes"/>
+
+                <p:outputLabel value="Tecnologia, Segurança e Inovação"
+                               styleClass="tituloTecnologia"/>
             </div>
 
             <div class="fundo3">
@@ -191,9 +195,24 @@
                 <p:outputLabel value="Na My Coding, seu projeto é desenvolvido com um compromisso inabalável com a segurança da informação,
                 para que você possa focar no que realmente importa: seu negócio." styleClass="descricaoSeguranca5"/>
             </div>
-            <div class="fundo7">
 
+            <div class="fundo7">
+                <h:panelGroup styleClass="descricaoContato">
+                    Conte com a <span style="color: #00b7ff;">MY CODING</span>, <span><br></br></span> vamos construir um sistema ideal
+                    <span><br></br></span> e verdadeiro para o seu negócio,
+                    com acompanhamento personalizado e compromisso com o seu resultado!
+                </h:panelGroup>
+
+                <h:panelGroup styleClass="descricaoConversar">
+                    Clique no botão do <span style="color: #04ff00;">WhatsApp</span> <span><br></br></span> para conversar diretamente
+                    com <span><br></br></span> a gente, ou envie um e-mail para:
+                </h:panelGroup>
+
+                <h:panelGroup styleClass="descricaoEmail">
+                    mycodingcontato@gmail.com
+                </h:panelGroup>
             </div>
+
         </div>
     </h:form>
 </h:body>

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 .fundo1 {
@@ -33,14 +33,14 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -55%;
 }
 
 .fundo2 .subTitulo {
     position: absolute;
-    top: 13%;
-    left: 50.7%;
-    transform: translate(-80%, -50%);
+    top: 15%;
+    left: 55.7%;
+    transform: translate(-100%, -40%);
     font-family: Reggae One;
     font-weight: bold;
     font-size: 2vw;
@@ -50,7 +50,7 @@
 
 .fundo2 .tituloQualidade {
     position: absolute;
-    top: 21.7%;
+    top: 21.9%;
     left: 43%;
     transform: translate(-70%, -50%);
     font-family: Embed code;
@@ -60,11 +60,11 @@
     color: white;
 }
 
-.fundo2 .tituloTecnologia {
+.fundo2 .tituloClientes {
     position: absolute;
-    top: 28%;
-    left: 29.9%;
-    transform: translate(-70%, -50%);
+    top: 28.3%;
+    left: 40.2%;
+    transform: translate(-61%, -50%);
     font-family: Embed code;
     font-weight: bold;
     font-size: 1.4vw;
@@ -72,10 +72,10 @@
     color: white;
 }
 
-.fundo2 .tituloClientes {
+.fundo2 .tituloTecnologia {
     position: absolute;
-    top: 34.5%;
-    left: 43.5%;
+    top: 34.7%;
+    left: 37.2%;
     transform: translate(-70%, -50%);
     font-family: Embed code;
     font-weight: bold;
@@ -91,7 +91,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -55%;
 }
 
 .fundo3 .tituloSite {
@@ -246,7 +246,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -55%;
 }
 
 .fundo4 .tituloApp {
@@ -478,7 +478,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -55%;
 }
 
 .fundo5 .tituloPage {
@@ -698,7 +698,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -55%;
 }
 
 .fundo6 .subTituloSeguranca {
@@ -781,10 +781,46 @@
 
 .fundo7 {
     width: 100vw;
-    height: 70vw;
-    background-image: url('#{resource['/images/fundo7.png']}');
+    height: 100vw;
     background-size: cover;
+    background-image: url('#{resource['/images/fundo7.png']}');
     background-repeat: no-repeat;
     position: relative;
-    margin-top: -54.5%;
+    margin-top: -54.98%;
+    overflow: hidden;
+}
+
+.fundo7 .descricaoContato {
+    position: absolute;
+    top: 17%;
+    margin-left: 54%;
+    transform: translate(-100%, -0%);
+    font-family: Reggae One;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    text-align: center
+}
+
+.fundo7 .descricaoConversar {
+    position: absolute;
+    top: 38%;
+    left: 49%;
+    transform: translate(-100%, -40%);
+    font-family: Reggae One;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    text-align: center
+}
+
+.fundo7 .descricaoEmail {
+    position: absolute;
+    top: 48%;
+    left: 43%;
+    transform: translate(-100%, -40%);
+    font-family: Embed code;
+    font-size: 2vw;
+    color: white;
+    text-align: center
 }
