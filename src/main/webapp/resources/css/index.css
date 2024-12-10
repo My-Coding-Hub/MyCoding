@@ -989,8 +989,8 @@
 .contatos .email {
     position: absolute;
     top: 81%;
-    left: 16%;
-    transform: translateX(-50%);
+    left: 6%;
+    transform: translateX(-50%, -50%);
     font-family: Embed code;
     font-size: 1.5vw;
     color: white;
@@ -999,8 +999,8 @@
 .contatos .wpp {
     position: absolute;
     top: 86%;
-    left: 12.4%;
-    transform: translateX(-50%);
+    left: 6%;
+    transform: translateX(-50%, -50%);
     font-family: Embed code;
     font-size: 1.5vw;
     color: white;
@@ -1009,8 +1009,8 @@
 .contatos .instagram {
     position: absolute;
     top: 90.7%;
-    left: 9.3%;
-    transform: translateX(-50%);
+    left: 6.2%;
+    transform: translateX(-50%, -50%);
     font-family: Embed code;
     font-size: 1.5vw;
     color: white;
@@ -1051,5 +1051,21 @@
     to {
         right: -100px;
     }
+}
+
+.wppContato {
+    position: fixed;
+    bottom: 1%;
+    right: 0.7%;
+    width: 8vw;
+    height: auto;
+    z-index: 1000;
+    cursor: pointer;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.wppContato:hover {
+    filter: brightness(0.5);
 
 }
+
