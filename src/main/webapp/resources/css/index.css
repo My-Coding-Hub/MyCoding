@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fundo1 {
@@ -14,9 +15,9 @@
     position: relative;
 }
 
-.fundo1 .titulo {
+.titulo {
     position: absolute;
-    top: 30%;
+    top: 31%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Reggae One;
@@ -36,10 +37,10 @@
     margin-top: -55%;
 }
 
-.fundo2 .subTitulo {
+.subTitulo {
     position: absolute;
     top: 15%;
-    left: 55.7%;
+    left: 50.5%;
     transform: translate(-100%, -40%);
     font-family: Reggae One;
     font-weight: bold;
@@ -48,7 +49,7 @@
     color: white;
 }
 
-.fundo2 .tituloQualidade {
+.tituloQualidade {
     position: absolute;
     top: 21.9%;
     left: 43%;
@@ -60,7 +61,7 @@
     color: white;
 }
 
-.fundo2 .tituloClientes {
+.tituloClientes {
     position: absolute;
     top: 28.3%;
     left: 40.2%;
@@ -72,7 +73,7 @@
     color: white;
 }
 
-.fundo2 .tituloTecnologia {
+.tituloTecnologia {
     position: absolute;
     top: 34.7%;
     left: 37.2%;
@@ -162,148 +163,47 @@
     margin-top: -55%;
 }
 
-.fundo3 .tituloSite {
+.tituloSite {
     position: absolute;
     top: 7%;
-    left: 60%;
+    left: 60.5%;
     transform: translate(-50%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo3 .descricaoSite {
+.descricaoSite {
     position: absolute;
-    top: 11%;
-    left: 71%;
+    top: 11.5%;
+    left: 68%;
     transform: translate(-15%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white; /* Cor do texto */
 }
 
-.fundo3 .descricaoSite2 {
-    position: absolute;
-    top: 19%;
-    left: 71%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white; /* Cor do texto */
-}
-
-.fundo3 .tituloSistema {
+.tituloSistema {
     position: absolute;
     top: 23%;
-    left: 44%;
+    left: 43%;
     transform: translate(-50%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo3 .descricaoSistema {
+.descricaoSistema {
     position: absolute;
     top: 26%;
     left: 28%;
     transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema1-1 {
-    position: absolute;
-    top: 27.2%;
-    left: 27.2%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema1-2 {
-    position: absolute;
-    top: 28.5%;
-    left: 26.6%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema1-3 {
-    position: absolute;
-    top: 29.8%;
-    left: 26.7%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema2 {
-    position: absolute;
-    top: 32%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema2-1 {
-    position: absolute;
-    top: 33.5%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema2-2 {
-    position: absolute;
-    top: 34.9%;
-    left: 29%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema2-3 {
-    position: absolute;
-    top: 36.3%;
-    left: 30.5%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo3 .descricaoSistema2-4 {
-    position: absolute;
-    top: 37.8%;
-    left: 24.8%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white;
 }
 
@@ -334,225 +234,47 @@
     margin-top: -55%;
 }
 
-.fundo4 .tituloApp {
+.tituloApp {
     position: absolute;
     top: 15%;
-    left: 33%;
+    left: 31%;
     transform: translate(-50%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo4 .descricaoApp {
+.descricaoApp {
     position: absolute;
     top: 18%;
     left: 25%;
     transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white;
 }
 
-.fundo4 .descricaoApp1-1 {
-    position: absolute;
-    top: 19.5%;
-    left: 26.5%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp1-2 {
-    position: absolute;
-    top: 21%;
-    left: 24.7%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp1-3 {
-    position: absolute;
-    top: 22.5%;
-    left: 26.6%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp1-4 {
-    position: absolute;
-    top: 24%;
-    left: 23.7%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp2 {
-    position: absolute;
-    top: 26.5%;
-    left: 25.2%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp2-1 {
-    position: absolute;
-    top: 28%;
-    left: 24.5%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp2-2 {
-    position: absolute;
-    top: 29.5%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoApp2-3 {
-    position: absolute;
-    top: 31%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .tituloEcommerce {
+.tituloEcommerce {
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 60.5%;
     transform: translate(-50%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo4 .descricaoEcommerce {
+.descricaoEcommerce {
     position: absolute;
     top: 18%;
     left: 60%;
     transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce1-1 {
-    position: absolute;
-    top: 19.5%;
-    left: 59.8%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce1-2 {
-    position: absolute;
-    top: 21%;
-    left: 60%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce1-3 {
-    position: absolute;
-    top: 22.5%;
-    left: 58.5%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce2 {
-    position: absolute;
-    top: 24.5%;
-    left: 59.7%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce2-1 {
-    position: absolute;
-    top: 26%;
-    left: 59.4%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce2-2 {
-    position: absolute;
-    top: 27.5%;
-    left: 60.2%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce2-3 {
-    position: absolute;
-    top: 29%;
-    left: 60.5%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo4 .descricaoEcommerce2-4 {
-    position: absolute;
-    top: 30.5%;
-    left: 56.2%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white;
 }
 
@@ -583,213 +305,47 @@
     margin-top: -55%;
 }
 
-.fundo5 .tituloPage {
+.tituloPage {
     position: absolute;
     top: 8.7%;
-    left: 20%;
+    left: 21.4%;
     transform: translate(-50%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo5 .descricaoPage {
+.descricaoPage {
     position: absolute;
     top: 11.7%;
     left: 13%;
     transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white;
 }
 
-.fundo5 .descricaoPage1-1 {
-    position: absolute;
-    top: 13.2%;
-    left: 13.6%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoPage1-2 {
-    position: absolute;
-    top: 14.6%;
-    left: 13.4%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-.fundo5 .descricaoPage1-3 {
-    position: absolute;
-    top: 16.1%;
-    left: 12.7%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoPage2 {
-    position: absolute;
-    top: 18.4%;
-    left: 13%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoPage2-1 {
-    position: absolute;
-    top: 19.9%;
-    left: 12.5%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoPage3 {
-    position: absolute;
-    top: 22.1%;
-    left: 13%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoPage3-1 {
-    position: absolute;
-    top: 23.6%;
-    left: 13.1%;
-    transform: translate(-14%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .tituloIdeias {
+.tituloIdeias {
     position: absolute;
     top: 22.5%;
-    left: 70%;
+    left: 62.5%;
     transform: translate(-26%, -50%);
-    font-family: Embed code;
+    font-family: Reggae One;
     font-weight: bold;
     font-size: 1.4vw;
     text-transform: uppercase;
     color: white;
 }
 
-.fundo5 .descricaoIdeias {
+.descricaoIdeias {
     position: absolute;
     top: 25%;
     left: 58%;
     transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias1 {
-    position: absolute;
-    top: 26.5%;
-    left: 56.7%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2 {
-    position: absolute;
-    top: 28.7%;
-    left: 59%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2-1 {
-    position: absolute;
-    top: 30.1%;
-    left: 62%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2-2 {
-    position: absolute;
-    top: 31.5%;
-    left: 63.5%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2-3 {
-    position: absolute;
-    top: 33%;
-    left: 62.6%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2-4 {
-    position: absolute;
-    top: 34.5%;
-    left: 62%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias2-5 {
-    position: absolute;
-    top: 36%;
-    left: 60%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
-    color: white;
-}
-
-.fundo5 .descricaoIdeias3 {
-    position: absolute;
-    top: 38.2%;
-    left: 61%;
-    transform: translate(-10%, -50%);
-    font-family: Tomorrow ;
-    font-weight: italic;
-    font-size: 1.1vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.0vw;
     color: white;
 }
 
@@ -837,7 +393,7 @@
     margin-top: -55%;
 }
 
-.fundo6 .subTituloSeguranca {
+.subTituloSeguranca {
     position: absolute;
     top: 3%;
     left: 60%;
@@ -849,69 +405,13 @@
     color: white;
 }
 
-.fundo6 .descricaoSeguranca {
+.descricaoSeguranca {
     position: absolute;
     top: 9%;
     left: 57.5%;
     transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.fundo6 .descricaoSeguranca1 {
-    position: absolute;
-    top: 15%;
-    left: 57.5%;
-    transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.fundo6 .descricaoSeguranca2 {
-    position: absolute;
-    top: 20.5%;
-    left: 57.5%;
-    transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.fundo6 .descricaoSeguranca3 {
-    position: absolute;
-    top: 25%;
-    left: 57.5%;
-    transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.fundo6 .descricaoSeguranca4 {
-    position: absolute;
-    top: 29.5%;
-    left: 57.5%;
-    transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.fundo6 .descricaoSeguranca5 {
-    position: absolute;
-    top: 35%;
-    left: 57.5%;
-    transform: translate(-10%, -50%);
-    font-family: Embed code;
-    font-weight: italic;
-    font-size: 1.2vw;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.15vw;
     color: white;
 }
 
@@ -943,38 +443,13 @@
     overflow: hidden;
 }
 
-
-
-.fundo7 .descricaoContato {
+.descricaoContato {
     position: absolute;
     top: 17%;
     margin-left: 54%;
     transform: translate(-100%, -0%);
     font-family: Reggae One;
     font-weight: bold;
-    font-size: 2vw;
-    color: white;
-    text-align: center
-}
-
-.fundo7 .descricaoConversar {
-    position: absolute;
-    top: 38%;
-    left: 49%;
-    transform: translate(-100%, -40%);
-    font-family: Reggae One;
-    font-weight: bold;
-    font-size: 2vw;
-    color: white;
-    text-align: center
-}
-
-.fundo7 .descricaoEmail {
-    position: absolute;
-    top: 48%;
-    left: 43%;
-    transform: translate(-100%, -40%);
-    font-family: Embed code;
     font-size: 2vw;
     color: white;
     text-align: center
@@ -1016,21 +491,13 @@
     color: white;
 }
 
-.fundo7 .direitos {
+.direitos {
     position: absolute;
     top: 90.5%;
     left: 84%;
     transform: translate(-120%, -40%);
     font-size: 0.72vw;
     color: white;
-}
-
-
-.divCorrer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 
 .correr {
@@ -1066,6 +533,4 @@
 
 .wppContato:hover {
     filter: brightness(0.5);
-
 }
-

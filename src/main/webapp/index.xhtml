@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
+      lang="pt-br"
       xmlns="http://www.w3.org/1999/xhtml">
 
 <h:head>
@@ -19,273 +20,287 @@
     <title>My Coding</title>
 </h:head>
 
-
 <h:body>
     <h:form>
-        <div>
-            <div class="fundo1">
-                <p:outputLabel value="Desenvolvimento de Software"
-                               styleClass="titulo"/>
+        <!-- INICIO HEADER-->
+        <nav class="nav">
+            <div>
+                <p:graphicImage
+                        name="images/wppContato.gif"
+                        alt="Contato WhatsApp"
+                        class="wppContato"
+                        onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;"/>
             </div>
 
+            <div class="fundo1">
+                <h1 class="titulo"> Desenvolvimento de Software </h1>
+            </div>
+        </nav>
+        <!-- FIM HEADER-->
+
+        <!-- INICIO SESSÃO -->
+        <section>
             <div class="fundo2">
-                <p:outputLabel value="Softwares, Sistemas, Projetos e Soluções Para Internet"
-                               styleClass="subTitulo"/>
+                <div>
+                    <div>
+                        <h1 class="subTitulo"> Softwares, Sistemas, Projetos <br></br> e Soluções Para Internet  </h1>
+                    </div>
 
-                <p:outputLabel value="Qualidade, Eficiência e Comprometimento"
-                               styleClass="tituloQualidade"/>
+                    <div>
+                        <h2 class="tituloQualidade"> Qualidade, Eficiência e Comprometimento </h2>
+                    </div>
 
-                <p:outputLabel value="Comunicação e Planejamento com os Clientes"
-                               styleClass="tituloClientes"/>
+                    <div>
+                        <h2 class="tituloClientes"> Comunicação e Planejamento com os Clientes </h2>
+                    </div>
 
-                <p:outputLabel value="Tecnologia, Segurança e Inovação"
-                               styleClass="tituloTecnologia"/>
+                    <div>
+                        <h2 class="tituloTecnologia"> Tecnologia, Segurança e Inovação </h2>
 
-                <div class="divCorreto1">
-                    <p:graphicImage name="images/correto.gif" styleClass="correto1"/>
+                    </div>
                 </div>
 
-                <div class="divCorreto2">
-                    <p:graphicImage name="images/correto.gif" styleClass="correto2"/>
-                </div>
+                <div>
+                    <div class="divCorreto1">
+                        <p:graphicImage name="images/correto.gif" class="correto1"/>
+                    </div>
 
-                <div class="divCorreto3">
-                    <p:graphicImage name="images/correto.gif" styleClass="correto3"/>
+                    <div class="divCorreto2">
+                        <p:graphicImage name="images/correto.gif" class="correto2"/>
+                    </div>
+
+                    <div class="divCorreto3">
+                        <p:graphicImage name="images/correto.gif" class="correto3"/>
+                    </div>
                 </div>
 
                 <div class="divAlvo">
-                    <p:graphicImage name="images/alvo.gif" styleClass="alvo"/>
+                    <p:graphicImage name="images/alvo.gif" class="alvo"/>
                 </div>
-
             </div>
 
+
             <div class="fundo3">
-                <p:outputLabel value="Websites"
-                               styleClass="tituloSite"/>
-                <p:outputLabel value="Criamos websites personalizados, com design moderno e responsivo,
-                    projetados para atender às suas necessidades, proporcionar uma experiência única ao usuário e
-                    garantir que seu negócio se destaque online."
-                               styleClass="descricaoSite"/>
+                <div>
+                    <div>
+                        <h1 class="tituloSite"> Websites </h1>
+                    </div>
 
-                <p:outputLabel value="Um site é uma parte essencial para qualquer empresa
-                     ou projeto que deseja estabelecer sua presença online e alcançar um público mais amplo.
-                     O website funciona como a vitrine digital de um negócio, oferecendo informações sobre produtos, serviços, valores, e muito mais."
-                               styleClass="descricaoSite2"/>
+                    <div>
+                        <p class="descricaoSite"> Criamos websites personalizados, com design moderno e responsivo,
+                            projetados para atender às suas necessidades, proporcionar uma experiência única ao usuário
+                            e
+                            garantir que seu negócio se destaque online. <br></br>
+                            <br></br>
+                            Um site é uma parte essencial para qualquer empresa
+                            ou projeto que deseja estabelecer sua presença online e alcançar um público mais amplo.
+                            O website funciona como a vitrine digital de um negócio, oferecendo informações sobre
+                            produtos, serviços, valores, e muito mais.</p>
+                    </div>
+                </div>
 
-                <p:outputLabel value="Sistemas"
-                               styleClass="tituloSistema"/>
-                <p:outputLabel value="Desenvolvemos sistemas web personalizados, projetados para otimizar"
-                               styleClass="descricaoSistema"/>
-                <p:outputLabel value="processos e melhorar a gestão do seu negócio, oferecendo soluções"
-                               styleClass="descricaoSistema1-1"/>
-                <p:outputLabel value="gerenciaveis e fáceis de usar. Focada nas necessidades do cliente,"
-                               styleClass="descricaoSistema1-2"/>
-                <p:outputLabel value="soluções que agilizam a operação e a interação com seus usuários."
-                               styleClass="descricaoSistema1-3"/>
+                <div>
+                    <div>
+                        <h1 class="tituloSistema"> Sistemas </h1>
+                    </div>
 
-                <p:outputLabel value="Gestão, segurança, controle, eficiência, acessibilidade, suporte"
-                               styleClass="descricaoSistema2"/>
-                <p:outputLabel value="e aplicações personalizadas para sua empresa." styleClass="descricaoSistema2-1"/>
-                <p:outputLabel value="Com um sistema de gestão, você pode controlar estoques,"
-                               styleClass="descricaoSistema2-2"/>
-                <p:outputLabel value="acompanhar vendas, monitorar desempenhos e tomar decisões"
-                               styleClass="descricaoSistema2-3"/>
-                <p:outputLabel value="estratégicas com base em dados precisos. " styleClass="descricaoSistema2-4"/>
+                    <div>
+                        <p class="descricaoSistema"> Desenvolvemos sistemas web personalizados, projetados para otimizar
+                            <br></br>
+                            processos e melhorar a gestão do seu negócio, oferecendo soluções <br></br>
+                            gerenciaveis e fáceis de usar. Focada nas necessidades do cliente, <br></br>
+                            soluções que agilizam a operação e a interação com seus usuários. <br></br>
+                            <br></br>
+                            Gestão, segurança, controle, eficiência, acessibilidade, suporte <br></br>
+                            e aplicações personalizadas para sua empresa. <br></br>
+                            Com um sistema de gestão, você pode controlar estoques, <br></br>
+                            acompanhar vendas, monitorar desempenhos e tomar decisões <br></br>
+                            estratégicas com base em dados precisos. </p>
+                    </div>
+                </div>
 
                 <div class="divEquipe">
-                    <p:graphicImage name="images/equipe.gif" styleClass="equipe"/>
+                    <p:graphicImage name="images/equipe.gif" class="equipe"/>
                 </div>
             </div>
 
             <div class="fundo4">
-                <p:outputLabel value="Aplicativos/ Soluções Desktop"
-                               styleClass="tituloApp"/>
+                <div>
+                    <div>
+                        <h1 class="tituloApp"> Aplicativos/ Soluções Desktop </h1>
+                    </div>
 
-                <p:outputLabel value="Desenvolvemos aplicativos e sistemas desktop personalizados,"
-                               styleClass="descricaoApp"/>
-                <p:outputLabel value="projetados para atender às necessidades específicas do seu negócio."
-                               styleClass="descricaoApp1-1"/>
-                <p:outputLabel value="Seja para melhorar a produtividade, automatizar processos ou"
-                               styleClass="descricaoApp1-2"/>
-                <p:outputLabel value="oferecer uma experiência diferenciada aos usuários, nossas soluções"
-                               styleClass="descricaoApp1-3"/>
-                <p:outputLabel value="combinam funcionalidade, desempenho e design intuitivo."
-                               styleClass="descricaoApp1-4"/>
+                    <div>
+                        <p class="descricaoApp"> Desenvolvemos aplicativos e sistemas desktop personalizados, <br></br>
+                            projetados para atender às necessidades específicas do seu negócio. <br></br>
+                            Seja para melhorar a produtividade, automatizar processos ou <br></br>
+                            oferecer uma experiência diferenciada aos usuários, nossas soluções <br></br>
+                            combinam funcionalidade, desempenho e design intuitivo. <br></br>
+                            <br></br>
+                            Diferente de sistemas online, soluções desktop podem funcionar <br></br>
+                            sem conexão com a internet, garantindo continuidade no uso. <br></br>
+                            Para automação, nossas soluções otimizam tarefas repetitivas, <br></br>
+                            oferecem relatórios e proporcionam controle sobre os dados. </p> <br></br>
+                    </div>
+                </div>
 
-                <p:outputLabel value="Diferente de sistemas online, soluções desktop podem funcionar"
-                               styleClass="descricaoApp2"/>
-                <p:outputLabel value="sem conexão com a internet, garantindo continuidade no uso."
-                               styleClass="descricaoApp2-1"/>
-                <p:outputLabel value="Para automação, nossas soluções otimizam tarefas repetitivas,"
-                               styleClass="descricaoApp2-2"/>
-                <p:outputLabel value="oferecem relatórios e proporcionam controle sobre os dados."
-                               styleClass="descricaoApp2-3"/>
+                <div>
+                    <div>
+                        <h1 class="tituloEcommerce"> E-commerce </h1>
+                    </div>
 
-                <p:outputLabel value="E-commerce"
-                               styleClass="tituloEcommerce"/>
-
-                <p:outputLabel value="Transformamos sua visão em uma loja virtual moderna, eficiente e"
-                               styleClass="descricaoEcommerce"/>
-                <p:outputLabel value="totalmente personalizada. Nossas soluções de e-commerce são"
-                               styleClass="descricaoEcommerce1-1"/>
-                <p:outputLabel value="projetadas para oferecer uma experiência de compra excepcional,"
-                               styleClass="descricaoEcommerce1-2"/>
-                <p:outputLabel value="atrair mais clientes e aumentar suas vendas." styleClass="descricaoEcommerce1-3"/>
-
-                <p:outputLabel value="Lojas virtuais com layouts modernos e responsivos, alinhadas"
-                               styleClass="descricaoEcommerce2"/>
-                <p:outputLabel value="à identidade da sua marca. Com sistemas de pagamento,"
-                               styleClass="descricaoEcommerce2-1"/>
-                <p:outputLabel value="gateways de envio, carrinho de compras inteligente, filtros de busca,"
-                               styleClass="descricaoEcommerce2-2"/>
-                <p:outputLabel value="implementação das melhores práticas para proteger os dados do cliente"
-                               styleClass="descricaoEcommerce2-3"/>
-                <p:outputLabel value="e muito mais" styleClass="descricaoEcommerce2-4"/>
+                    <div>
+                        <p class="descricaoEcommerce"> Transformamos sua visão em uma loja virtual moderna, eficiente e
+                            <br></br>
+                            totalmente personalizada. Nossas soluções de e-commerce são <br></br>
+                            projetadas para oferecer uma experiência de compra excepcional, <br></br>
+                            atrair mais clientes e aumentar suas vendas. <br></br>
+                            <br></br>
+                            Lojas virtuais com layouts modernos e responsivos, alinhadas <br></br>
+                            à identidade da sua marca. Com sistemas de pagamento, <br></br>
+                            gateways de envio, carrinho de compras inteligente, filtros de busca, <br></br>
+                            implementação das melhores práticas para proteger os dados do cliente <br></br>
+                            e muito mais </p>
+                    </div>
+                </div>
 
                 <div class="divDupla">
-                    <p:graphicImage name="images/dupla.gif" styleClass="dupla"/>
+                    <p:graphicImage name="images/dupla.gif" class="dupla"/>
                 </div>
             </div>
 
             <div class="fundo5">
-                <p:outputLabel value="Landing Pages e Portifólios"
-                               styleClass="tituloPage"/>
+                <div>
+                    <div>
+                        <h1 class="tituloPage"> Landing Pages e Portifólios </h1>
+                    </div>
 
-                <p:outputLabel value="Criamos landing pages e portfólios digitais que impressionam."
-                               styleClass="descricaoPage"/>
-                <p:outputLabel value="Seja para promover um produto, serviço ou destacar suas habilidades,"
-                               styleClass="descricaoPage1-1"/>
-                <p:outputLabel value="nossas soluções combinam design atrativo, conteúdo estratégico e "
-                               styleClass="descricaoPage1-2"/>
-                <p:outputLabel value="funcionalidades sob medida para alcançar seus objetivos."
-                               styleClass="descricaoPage1-3"/>
+                    <div>
+                        <p class="descricaoPage"> Criamos landing pages e portfólios digitais que impressionam.
+                            <br></br>
+                            Seja para promover um produto, serviço ou destacar suas habilidades, <br></br>
+                            nossas soluções combinam design atrativo, conteúdo estratégico e <br></br>
+                            funcionalidades sob medida para alcançar seus objetivos. <br></br>
+                            <br></br>
+                            Landing pages são ferramentas poderosas para captar leads, <br></br>
+                            divulgar campanhas e converter visitantes em clientes. <br></br>
+                            <br></br>
+                            Um portfólio digital bem projetado é essencial para destacar <br></br>
+                            seus trabalhos e conquistar novos clientes ou oportunidades. </p> <br></br>
+                    </div>
+                </div>
 
-                <p:outputLabel value="Landing pages são ferramentas poderosas para captar leads,"
-                               styleClass="descricaoPage2"/>
-                <p:outputLabel value="divulgar campanhas e converter visitantes em clientes."
-                               styleClass="descricaoPage2-1"/>
+                <div>
+                    <div>
+                        <h1 class="tituloIdeias"> Transforme Sua Ideia em Realidade </h1>
+                    </div>
 
-                <p:outputLabel value="Um portfólio digital bem projetado é essencial para destacar"
-                               styleClass="descricaoPage3"/>
-                <p:outputLabel value="seus trabalhos e conquistar novos clientes ou oportunidades."
-                               styleClass="descricaoPage3-1"/>
-
-
-                <p:outputLabel value="Transforme Sua Ideia em Realidade"
-                               styleClass="tituloIdeias"/>
-
-                <p:outputLabel value="Você teve uma ideia incrível? Uma inovação que pode fazer a diferença?"
-                               styleClass="descricaoIdeias"/>
-                <p:outputLabel value="Estamos aqui para ajudar a tirá-la do papel!" styleClass="descricaoIdeias1"/>
-
-                <p:outputLabel value="Não nos limitamos ao que o mercado já faz há anos."
-                               styleClass="descricaoIdeias2"/>
-                <p:outputLabel value="Estamos sempre em busca de inovação," styleClass="descricaoIdeias2-1"/>
-                <p:outputLabel value="criando soluções únicas e diferenciadas." styleClass="descricaoIdeias2-2"/>
-                <p:outputLabel value="Nossa equipe está preparada para ouvir suas ideias,"
-                               styleClass="descricaoIdeias2-3"/>
-                <p:outputLabel value="planejar com você e desenvolver projetos personalizados"
-                               styleClass="descricaoIdeias2-4"/>
-                <p:outputLabel value="que se tornem verdadeiros sucessos." styleClass="descricaoIdeias2-5"/>
-
-                <p:outputLabel value="Entre em contato conosco e vamos conversar sobre essa ideia!"
-                               styleClass="descricaoIdeias3"/>
+                    <div>
+                        <p class="descricaoIdeias"> Você teve uma ideia incrível? Uma inovação que pode fazer a
+                            diferença? <br></br>
+                            Estamos aqui para ajudar a tirá-la do papel! <br></br>
+                            <br></br>
+                            Não nos limitamos ao que o mercado já faz há anos. <br></br>
+                            Estamos sempre em busca de inovação, <br></br>
+                            criando soluções únicas e diferenciadas. <br></br>
+                            Nossa equipe está preparada para ouvir suas ideias, <br></br>
+                            planejar com você e desenvolver projetos personalizados <br></br>
+                            que se tornem verdadeiros sucessos. <br></br>
+                            <br></br>
+                            Entre em contato conosco e vamos conversar sobre essa ideia! </p>
+                    </div>
+                </div>
 
                 <div class="divFone">
-                    <p:graphicImage name="images/fone.gif" styleClass="fone"/>
+                    <p:graphicImage name="images/fone.gif" class="fone"/>
                 </div>
 
                 <div class="divLampada">
-                    <p:graphicImage name="images/lampada.gif" styleClass="lampada"/>
+                    <p:graphicImage name="images/lampada.gif" class="lampada"/>
                 </div>
             </div>
 
             <div class="fundo6">
-                <p:outputLabel value="Segurança da Informação"
-                               styleClass="subTituloSeguranca"/>
+                <div>
+                    <div>
+                        <h1 class="subTituloSeguranca"> Segurança da Informação </h1>
+                    </div>
 
-                <p:outputLabel value="Na My Coding, a segurança dos dados dos nossos clientes é tratada com a mais alta prioridade.
-                        Adotamos práticas e tecnologias avançadas para garantir que suas informações estejam sempre protegidas."
-                               styleClass="descricaoSeguranca"/>
+                    <div>
+                        <p class="descricaoSeguranca"> Na My Coding, a segurança dos dados dos nossos clientes é tratada
+                            com a mais alta prioridade.
+                            Adotamos práticas e tecnologias avançadas para garantir que suas informações estejam sempre
+                            protegidas. <br></br>
+                            <br></br>
+                            Criptografia Avançada: Utilizamos métodos de criptografia de ponta para proteger dados em
+                            trânsito e armazenados, garantindo confidencialidade e integridade. <br></br>
+                            <br></br>
+                            Banco de Dados Seguro: Estruturamos bancos de dados com políticas robustas de acesso,
+                            redundância e proteção contra vulnerabilidades. <br></br>
+                            <br></br>
+                            Protocolos: Implementamos protocolos de segurança, como HTTPS e TLS, para prevenir acessos
+                            não autorizados. <br></br>
+                            <br></br>
+                            Clean Code: Desenvolvemos sistemas com código limpo e eficiente, reduzindo brechas de
+                            segurança e facilitando a manutenção. <br></br>
+                            <br></br>
+                            Na My Coding, seu projeto é desenvolvido com um compromisso inabalável com a segurança da
+                            informação,
+                            para que você possa focar no que realmente importa: seu negócio. </p>
+                    </div>
 
-                <p:outputLabel
-                        value="Criptografia Avançada: Utilizamos métodos de criptografia de ponta para proteger dados em trânsito e armazenados, garantindo confidencialidade e integridade."
-                        styleClass="descricaoSeguranca1"/>
-
-
-                <p:outputLabel
-                        value="Banco de Dados Seguro: Estruturamos bancos de dados com políticas robustas de acesso, redundância e proteção contra vulnerabilidades."
-                        styleClass="descricaoSeguranca2"/>
-
-                <p:outputLabel
-                        value="Protocolos: Implementamos protocolos de segurança, como HTTPS e TLS, para prevenir acessos não autorizados."
-                        styleClass="descricaoSeguranca3"/>
-
-                <p:outputLabel
-                        value="Clean Code: Desenvolvemos sistemas com código limpo e eficiente, reduzindo brechas de segurança e facilitando a manutenção."
-                        styleClass="descricaoSeguranca4"/>
-
-                <p:outputLabel value="Na My Coding, seu projeto é desenvolvido com um compromisso inabalável com a segurança da informação,
-                para que você possa focar no que realmente importa: seu negócio." styleClass="descricaoSeguranca5"/>
+                </div>
 
                 <div class="divSeguro">
-                    <p:graphicImage name="images/seguro.gif" styleClass="seguro"/>
+                    <p:graphicImage name="images/seguro.gif" class="seguro"/>
                 </div>
             </div>
+        </section>
+        <!-- FIM SESSÃO -->
 
+        <!-- INICIO RODAPÉ -->
+        <footer>
             <div class="fundo7">
-                <h:panelGroup styleClass="descricaoContato">
-                    Conte com a <span style="color: #00b7ff;">MY CODING</span>, <span><br></br></span> vamos construir um sistema ideal
-                    <span><br></br></span> e verdadeiro para o seu negócio,
-                    com acompanhamento personalizado e compromisso com o seu resultado!
-                </h:panelGroup>
-
-                <h:panelGroup styleClass="descricaoConversar">
-                    Clique no botão do <span style="color: #04ff00;">WhatsApp</span> <span><br></br></span> para conversar diretamente
-                    com <span><br></br></span> a gente, ou envie um e-mail para:
-                </h:panelGroup>
-
-                <h:panelGroup styleClass="descricaoEmail">
-                    mycodingcontato@gmail.com
-                </h:panelGroup>
+                <div>
+                    <h2 class="descricaoContato">
+                        Conte com a MY CODING vamos construir um sistema ideal
+                        e verdadeiro para o seu negócio,
+                        com acompanhamento personalizado e compromisso com o seu resultado! <br></br>
+                        <br></br>
+                        Clique no botão do WhatsApp para conversar diretamente
+                        com a gente, ou envie um e-mail para: <br></br>
+                        <br></br>
+                        mycodingcontato@gmail.com </h2>
+                </div>
 
                 <div class="contatos">
                     <div>
-                        <p:commandLink value="mycodingcontato@gmail.com" styleClass="email"
+                        <p:commandLink value="mycodingcontato@gmail.com" class="email"
                                        onclick="window.location.href='mailto:mycodingcontato@gmail.com'; return false;"/>
                     </div>
 
                     <div>
                         <p:commandLink
-                                value="+55 (11) 91528-6368"
-                                styleClass="wpp"
+                                value="+55 (11) 91528-6368" class="wpp"
                                 onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;" />
                     </div>
 
                     <div>
-                        <p:commandLink value="my_c0ding" styleClass="instagram"
+                        <p:commandLink value="my_c0ding" class="instagram"
                                        onclick="window.open('https://www.instagram.com/my_c0ding/', '_blank'); return false;"/>
                     </div>
                 </div>
 
-                <h:panelGroup styleClass="direitos">
+                <div class="direitos">
                     © My Coding. Todos os direitos reservados.
-                </h:panelGroup>
+                </div>
 
-                <div class="correr">
-                    <p:graphicImage name="images/correr.gif" styleClass="correr"/>
+                <div>
+                    <p:graphicImage name="images/correr.gif" class="correr"/>
                 </div>
             </div>
-        </div>
-
-        <div>
-            <p:graphicImage
-                    name="images/wppContato.gif"
-                    alt="Contato WhatsApp"
-                    styleClass="wppContato"
-                    onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;" />
-        </div>
-
+        </footer>
+        <!-- FIM RODAPÉ -->
     </h:form>
 </h:body>
 </html>
