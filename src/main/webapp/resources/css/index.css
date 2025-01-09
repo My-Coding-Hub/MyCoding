@@ -16,8 +16,8 @@ html{
 /* CONTATO FIXO */
 .fixed {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -595,7 +595,7 @@ html{
 
 @media (max-width: 560px) {
     .ui-video video {
-        width: 450px;
+        width: 420px;
     }
 
     .panel-seguranca {
@@ -640,5 +640,35 @@ html{
     .panel-seguranca p {
         margin-top: 20px;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ui-video video {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .ui-video video {
+        width: 380px;
+    }
+}
+
+@media (max-width: 380px) {
+    .ui-video video {
+        width: 340px;
+    }
+}
+
+@media (max-width: 350px) {
+    .ui-video video {
+        width: 300px;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 600px) {
+    .ui-video video {
+        width: 600px;
     }
 }
