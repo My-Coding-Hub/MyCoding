@@ -103,6 +103,105 @@ html{
 }
 /* FIM MAIN */
 
+/* INICIO RESPONSIVO */
+.conteiner-consultar {
+    width: 100%;
+    display: flex;
+}
+
+.div-consultar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.tecnologia video {
+    margin: 0;
+    padding: 0;
+    width: 600px !important;
+    height: auto !important;
+}
+
+.div-sobre h2 {
+   font-size: 30px;
+}
+
+.div-sobre p {
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+.separator-sobre2 {
+    margin-top: 20px;
+    margin-right: 2px;
+}
+
+.div-btn-consultoria {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* FIM RESPONSIVO */
+
+/* INICIO MODAL */
+.consultoria-dialog {
+    width: 660px !important;
+}
+
+.consultoria-dialog p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.div-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form1 {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form2 {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-modal,
+.email-modal,
+.empresa-modal,
+.telefone-modal,
+.select-modal,
+.area-modal  {
+    width: 300px !important;
+}
+
+.div-area {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.area-modal  {
+    width: 610px !important;
+    height: auto;
+}
+
+.div-btn-modal {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+/* FIM MODAL */
+
 /* INICIO CONTEUDO */
 .conteiner-conteudo {
     width: 100%;
@@ -183,8 +282,30 @@ html{
     width: 600px;
 }
 
+.div-websites .ui-panel-content,
+.div-sistemas .ui-panel-content,
+.div-aplicativos .ui-panel-content,
+.div-ecommerce .ui-panel-content,
+.div-portifolio .ui-panel-content,
+.div-ideia .ui-panel-content {
+    background-color: transparent !important;
+}
+
+.conteiner-topicos h2{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
 .conteiner-topicos p{
     font-size: 20px;
+    padding: 15px;
+}
+
+.separator1 {
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-right: 16px;
 }
 
 .conteiner-seguranca {
@@ -206,39 +327,265 @@ html{
 .ui-video video {
     padding: 0;
     margin: 0;
-    width: 1000px;
+    width: 800px;
     height: auto;
 }
+/* FIM CONTEUDO */
 
-.div-seguranca {
+/* INICIO SEGURANÇA */
+.conteiner-gif {
+    width: 100%;
+}
+
+.div-gif {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-.panel-seguranca {
-    width: 800px;
-    margin-top: 25px;
+.div-banco {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 250px;
 }
 
-.panel-seguranca h2 {
+.banco {
+    width: 120px;
+    height: auto;
+}
+
+.div-banco h2 {
     font-size: 26px;
+    margin-top: 20px;
+}
+
+.separator-banco {
+    margin-top: 5px;
+    width: 540px;
+}
+
+.div-banco p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.div-criptografia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+.criptografia {
+    width: 120px;
+    height: auto;
+}
+
+.div-criptografia h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.separator-criptografia {
+    margin-top: 5px;
+    width: 540px;
+}
+
+.div-criptografia p {
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.div-protocolo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 250px;
+}
+
+.protocolo {
+    width: 140px;
+    height: auto;
+}
+
+.div-protocolo h2 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.separator-protocolo {
+    margin-top: 5px;
+    width: 540px;
+}
+
+.div-protocolo p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.div-clean-code {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+.clean-code {
+    width: 150px;
+    height: auto;
+}
+
+.div-clean-code h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.separator-clean-code {
+    margin-top: 5px;
+    width: 540px;
+}
+
+.div-clean-code p {
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+/* FIM SEGURANÇA */
+
+/* INICIO FORMULARIO */
+#conteiner-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-formulario {
+    margin-top: 80px;
+}
+
+.titulo-duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.panel-seguranca p {
-    margin-top: 26px;
-    font-size: 20px;
-    padding: 10px;
+.paragrafo-duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #bfbdbd;
+    opacity: 0.7;
+    font-size: 1rem;
 }
-/* FIM CONTEUDO */
+
+.separator {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.formulario-contato {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-left: 2%;
+}
+
+.div-form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-right: 130px;
+}
+
+.separator3 {
+    margin-right: 10px;
+}
+
+.input-nome {
+    width: 305px;
+    height: 40px;
+}
+
+.input-email {
+    width: 305px;
+    height: 40px;
+}
+
+.input-telefone {
+    width: 160px;
+    height: 40px;
+}
+
+.input-mensagem {
+    width: 400px;
+    height: 108px;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar {
+    width: 80px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-nosso {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-link {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.link p {
+    margin-left: 20px;
+}
+
+.link:hover {
+    filter: brightness(0.5);
+}
+/* FIM FORMULARIO */
 
 /* INICIO FOOTER */
 .footer-conteiner {
     width: 100%;
-    height: calc(100vh - 80px);
-    margin-top: 60px;
+    margin-top: 50px;
     background-image: url('#{resource['/images/fundo2.png']}');
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,63 +602,18 @@ html{
     text-align: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .div-footer h1 {
     font-family: Reggae One;
-    font-size: 80px;
-    margin-top: 80px;
+    font-size: 60px;
+    margin-top: 100px;
 }
 
 .div-footer p {
-    margin-top: 30px;
+    margin: 50px;
 }
-
-.div-contato {
-    margin-top: 50px;
-}
-
-.contato {
-    display: flex;
-    justify-conteiner: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.email {
-    width: 60px;
-    height: auto;
-}
-
-.whatsapp {
-    width: 60px;
-    height: auto;
-}
-
-.instagram {
-    width: 50px;
-    height: auto;
-}
-
-.link {
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: filter 0.4s ease, transform 0.4s ease;
-}
-
-.div-contato h2 {
-    font-family: Reggae One;
-    font-size: 30px;
-    margin-top: 30px;
-}
-
-.link:hover {
-    filter: brightness(0.5);
-}
-/* INICIO FOOTER */
+/* FIM FOOTER */
 
 /* RESPONSIVIDADE */
 @media (max-width: 1500px) {

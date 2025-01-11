@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       lang="pt-br"
       xmlns="http://www.w3.org/1999/xhtml">
 
@@ -34,7 +35,7 @@
 </h:head>
 
 <h:body>
-    <h:form>
+    <h:form id="form">
         <!-- CONTATO FIXO -->
         <div class="fixed">
             <p:graphicImage
@@ -52,7 +53,7 @@
                     <a href="#inicio">Início</a>
                 </li>
                 <li>
-                    <a href="#seguranca">Segurança</a>
+                    <a href="#contato">Sobre</a>
                 </li>
                 <li>
                     <a href="#contato">Contato</a>
@@ -72,25 +73,115 @@
         </section>
         <!-- FIM MAIN -->
 
-        <!-- INICIO CONTEUDO -->
+        <!-- INICIO RESPONSIVO -->
         <section>
-            <div class="conteiner-conteudo">
-                <div class="div-video-pesquisar">
-                    <p:video value="/resources/images/video-pesquisar.mp4"
+            <div class="conteiner-consultar">
+                <div class="div-consultar">
+                    <p:video value="/resources/images/tecnologia.mp4"
                              player="mp4"
                              autoplay="true"
                              loop="true"
                              muted="true"
-                             class="video-pesquisar">
+                             class="tecnologia">
                     </p:video>
+
+                    <div class="div-sobre">
+                        <h2>My Coding</h2>
+
+                        <p>
+                            Somos uma empresa de tecnologia especializada em desenvolvimento de software <br></br>
+                            e sistemas personalizados. Criamos soluções digitais inovadoras e responsivas, com foco em
+                            <br></br>
+                            transformar ideias em resultados e impulsionar negócios com qualidade e inovação.
+                        </p>
+
+                        <p:separator class="separator-sobre2"/>
+
+                        <div class="div-btn-consultoria">
+                            <p:commandButton type="button" value="Consultoria"
+                                             onclick="PF('consultoriaDialog').show();"/>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <p:dialog id="consultoriaDialog"
+                      header="Fale com nossos especialistas"
+                      widgetVar="consultoriaDialog"
+                      modal="true"
+                      resizable="false"
+                      class="consultoria-dialog">
+                <p>
+                    Precisando de soluções? Estamos aqui para ajudar! <br></br> <br></br>
+                    Preencha o formulário abaixo para que nossa equipe entenda suas necessidades.
+                    Entraremos em contato para propor a melhor solução.
+                </p>
+
+                <div class="div-modal">
+                    <div class="form1">
+                        <p:inputText id="nomeModal" value="#{consultoriaBean.nomeModal}"
+                                     placeholder="Seu nome" class="nome-modal"/>
+
+                        <p:inputText id="emailModal" value="#{consultoriaBean.emailModal}"
+                                     placeholder="Seu e-mail" class="email-modal"/>
+
+                        <p:selectOneMenu id="option" value="#{consultoriaBean.tipoProjetoModal}"
+                                         class="select-modal">
+                            <f:selectItem itemLabel="Selecione o tipo de projeto" itemValue=""
+                                          noSelectionOption="true"/>
+                            <f:selectItem itemLabel="Sistemas" itemValue="Desenvolvimento de sistemas"/>
+                            <f:selectItem itemLabel="Websites" itemValue="Websites"/>
+                            <f:selectItem itemLabel="Mobile" itemValue="Mobile"/>
+                            <f:selectItem itemLabel="Desktop" itemValue="Desktop"/>
+                            <f:selectItem itemLabel="E-Commerce" itemValue="E-Commerce"/>
+                            <f:selectItem itemLabel="Portifólio" itemValue="Portifólios"/>
+                            <f:selectItem itemLabel="Outros" itemValue="Outros"/>
+                        </p:selectOneMenu>
+                    </div>
+
+                    <div class="form2">
+                        <p:inputText id="empresaModal" value="#{consultoriaBean.empresaModal}"
+                                     placeholder="Empresa/Organização" class="empresa-modal"/>
+
+                        <p:inputMask id="telefoneModal" value="#{consultoriaBean.telefoneModal}"
+                                     mask="(99) 99999-9999" validateMask="true"
+                                     placeholder="Telefone/WhatsApp" class="telefone-modal"/>
+                    </div>
+                </div>
+
+                <div class="div-area">
+                    <p:inputTextarea id="descricaoModal" value="#{consultoriaBean.descricaoModal}"
+                                     placeholder="Descreva sua necessidade"
+                                     rows="5"
+                                     cols="30"
+                                     maxlength="2000"
+                                     counterTemplate="{0} characters remaining."
+                                     autoResize="false"
+                                     class="area-modal"/>
+                </div>
+
+                <div class="div-btn-modal">
+                    <p:growl id="growl-modal" showDetail="true" life="3000" />
+
+                    <p:commandButton value="Enviar"
+                                     action="#{consultoriaBean.enviar}"
+                                     update="form growl-modal"/>
+
+                </div>
+            </p:dialog>
+        </section>
+        <!-- INICIO RESPONSIVO -->
+
+
+        <!-- INICIO CONTEUDO -->
+        <section>
+
 
             <div class="conteiner-topicos">
                 <div class="div-topicos1">
                     <p:panel class="div-websites">
                         <h2>WEBSITES</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
@@ -103,12 +194,13 @@
 
                             Um site é uma parte essencial para qualquer empresa ou projeto que deseja estabelecer sua
                             presença online e alcançar um público mais amplo. O website funciona como a vitrine digital
-                            de um negócio, oferecendo informações sobre produtos, serviços, valores, e muito mais. <br></br> <br></br></p>
+                            de um negócio, oferecendo informações sobre produtos, serviços, valores, e muito mais.
+                            <br></br> <br></br></p>
                     </p:panel>
 
                     <p:panel class="div-sistemas">
                         <h2>SISTEMAS</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
@@ -128,7 +220,7 @@
                 <div class="div-topicos2">
                     <p:panel class="div-aplicativos">
                         <h2>APLICATIVOS/SOLUÇÕES DESKTOP</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
@@ -141,33 +233,37 @@
                             <br></br>
 
                             Diferente de sistemas online, soluções desktop podem funcionar sem conexão com a internet,
-                            garantindo continuidade no uso. Para automação, nossas soluções otimizam tarefas repetitivas,
+                            garantindo continuidade no uso. Para automação, nossas soluções otimizam tarefas
+                            repetitivas,
                             oferecem relatórios e proporcionam controle sobre os dados.</p>
                     </p:panel>
 
                     <p:panel class="div-ecommerce">
                         <h2>E-COMMERCE</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
                         <p>Transformamos sua visão em uma loja virtual moderna, eficiente e totalmente personalizada.
-                            Nossas soluções de e-commerce são projetadas para oferecer uma experiência de compra excepcional,
+                            Nossas soluções de e-commerce são projetadas para oferecer uma experiência de compra
+                            excepcional,
                             atrair mais clientes e aumentar suas vendas.
 
                             <br></br>
                             <br></br>
 
                             Lojas virtuais com layouts modernos e responsivos, alinhadas à identidade da sua marca.
-                            Com sistemas de pagamento, gateways de envio, carrinho de compras inteligente, filtros de busca,
-                            implementação das melhores práticas para proteger os dados do cliente e muito mais. <br></br> <br></br></p>
+                            Com sistemas de pagamento, gateways de envio, carrinho de compras inteligente, filtros de
+                            busca,
+                            implementação das melhores práticas para proteger os dados do cliente e muito mais.
+                            <br></br> <br></br></p>
                     </p:panel>
                 </div>
 
                 <div class="div-topicos3">
                     <p:panel class="div-portifolio">
                         <h2>LANDING PAGES E PORTIFÓLIOS</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
@@ -190,7 +286,7 @@
 
                     <p:panel class="div-ideia">
                         <h2>TRANSFORME SUAS IDEIAS EM REALIDADE</h2>
-                        <p:separator/>
+                        <p:separator class="separator1"/>
 
                         <br></br>
 
@@ -209,11 +305,15 @@
 
                             Entre em contato conosco e vamos conversar sobre essa ideia!
                             <br></br>
-                            <br></br></p>
+                            <br></br>
+                            <br></br>
+                        </p>
                     </p:panel>
                 </div>
             </div>
+        </section>
 
+        <section>
             <div class="conteiner-seguranca">
                 <div class="div-video">
                     <p:video value="/resources/images/fundo-video.mp4"
@@ -224,77 +324,163 @@
                              class="video">
                     </p:video>
                 </div>
+            </div>
+        </section>
 
-                <div class="div-seguranca" id="seguranca">
-                    <p:panel class="panel-seguranca">
-                    <h2>SEGURANÇA DA INFORMAÇÃO</h2>
-                        <br></br>
-                        <p:separator/>
+        <!-- FIM CONTEUDO -->
 
-                        <p>Na <span style="color: #00d9ff; font-weight: bold;">My Coding</span>, a <span style="color: #00ff08;">segurança dos dados</span>
-                        dos nossos clientes é tratada com a mais alta prioridade.
-                            Adotamos práticas e tecnologias avançadas para garantir que suas informações estejam sempre <span style="color: #00ff08;">protegidas</span>.
+        <section>
+            <div class="conteiner-gif">
+                <div class="div-gif">
+                    <div class="div-banco">
+                        <p:graphicImage
+                                name="images/banco-de-dados.gif"
+                                alt="Banco de Dados"
+                                class="banco"/>
 
-                        <br></br>
-                        <br></br>
+                        <h2>Banco de Dados</h2>
+                        <p:separator class="separator-banco"/>
 
-                        <span style="color: #d4ff00;">Criptografia Avançada</span>: Utilizamos métodos de criptografia de ponta para proteger dados em
-                        trânsito e armazenados, garantindo <span style="color: #00ff08;">confidencialidade e integridade</span>.
+                        <p>
+                            Trabalhamos com bancos de dados, abrangendo desde <br></br>
+                            a modelagem e implementação até a manutenção e otimização. <br></br>
+                            Criamos estruturas eficientes, gerenciamos acessos, <br></br>
+                            realizamos backups, protegemos dados contra vulnerabilidades <br></br>
+                            e otimizamos consultas e desempenho.</p>
+                    </div>
 
-                        <br></br>
-                        <br></br>
+                    <div class="div-criptografia">
+                        <p:graphicImage
+                                name="images/criptografia.gif"
+                                alt="Criptografia"
+                                class="criptografia"/>
 
-                        <span style="color: #d4ff00;">Banco de Dados Seguro</span>: Estruturamos bancos de dados com políticas robustas de acesso,
-                        redundância e <span style="color: #00ff08;">proteção contra vulnerabilidades</span>.
+                        <h2>Criptografia</h2>
+                        <p:separator class="separator-criptografia"/>
 
-                        <br></br>
-                        <br></br>
+                        <p>
+                            Utilizamos métodos de criptografia para proteger dados em trânsito <br></br>
+                            e armazenados, garantindo confidencialidade e integridade. <br></br>
+                            Nossa abordagem inclui algoritmos robustos, práticas atualizadas <br></br>
+                            e monitoramento contínuo para assegurar a segurança da informação.
+                        </p>
+                    </div>
 
-                        <span style="color: #d4ff00;">Protocolos</span>: Implementamos protocolos de segurança, como <span style="color: #00ff08;">HTTPS e TLS</span>, para prevenir acessos
-                        <span style="color: #00ff08;">não autorizados</span>.
+                    <div class="div-protocolo">
+                        <p:graphicImage
+                                name="images/protocolo.gif"
+                                alt="Protocolo"
+                                class="protocolo"/>
 
-                        <br></br>
-                        <br></br>
+                        <h2>Protocolos</h2>
+                        <p:separator class="separator-protocolo"/>
 
-                        <span style="color: #d4ff00;">Clean Code</span>: Desenvolvemos sistemas com <span style="color: #00ff08;">código limpo e eficiente</span>, reduzindo brechas de
-                        segurança e <span style="color: #00ff08;">facilitando a manutenção</span>.
+                        <p>
+                            Implementamos protocolos de segurança, como HTTPS e TLS, <br></br>
+                            para prevenir acessos não autorizados. <br></br>
+                            Nossa abordagem garante conexões seguras e a proteção <br></br>
+                            das comunicações entre sistemas e usuários.
+                        </p>
+                    </div>
 
-                        <br></br>
-                        <br></br>
+                    <div class="div-clean-code">
+                        <p:graphicImage
+                                name="images/clean-code.gif"
+                                alt="Clean Code"
+                                class="clean-code"/>
 
-                        Na <span style="color: #00d9ff; font-weight: bold;">My Coding</span>, seu projeto é desenvolvido com um compromisso inabalável com a <span style="color: #00ff08;">segurança da informação</span>,
-                        para que você possa focar no que realmente importa: seu negócio.</p>
-                    </p:panel>
+                        <h2>Clean Code</h2>
+                        <p:separator class="separator-clean-code"/>
+
+                        <p>
+                            Desenvolvemos sistemas com código limpo e eficiente, <br></br>
+                            reduzindo brechas de segurança e facilitando a manutenção. <br></br>
+                            Nosso foco está na clareza, organização e boas práticas, <br></br>
+                            promovendo soluções confiáveis e escaláveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- INICIO FORMULÁRIO -->
+        <section id="conteiner-formulario">
+            <div class="div-formulario">
+                <h2 class="titulo-duvidas">
+                    Tire suas dúvidas
+                    <p:separator class="separator"/>
+                </h2>
+
+                <p class="paragrafo-duvidas">
+                    Insira seus dados de contato e clique enviar, entraremos em contato.
+                </p>
+
+                <div class="formulario-contato">
+                    <div class="div-form">
+                        <p:inputText id="nomeDuvidas" value="#{duvidasBean.nomeDuvidas}" placeholder="Nome"
+                                     class="input-nome"/>
+
+                        <p:inputText id="emailDuvidas" value="#{duvidasBean.emailDuvidas}" placeholder="E-mail"
+                                     class="input-email"/>
+                        <p:inputMask id="telefoneDuvidas" value="#{duvidasBean.telefoneDuvidas}" mask="(99) 99999-9999"
+                                     validateMask="true"
+                                     placeholder="Telefone/WhatsApp" class="input-telefone"/>
+                    </div>
+
+                    <div class="div-form2">
+                        <p:inputTextarea id="descricaoDuvidas" value="#{duvidasBean.descricaoDuvidas}"
+                                         placeholder="Mensagem" rows="5" cols="30"
+                                         maxlength="1000"
+                                         counterTemplate="{0} characters remaining."
+                                         autoResize="false"
+                                         class="input-mensagem"/>
+
+                        <div class="div-btn">
+                            <p:growl id="growl" showDetail="true" life="3000" />
+
+                            <p:commandButton value="Enviar"
+                                             class="btn-enviar"
+                                             action="#{duvidasBean.enviarDuvidas}"
+                                             update="form growl"
+                                             scrollable="false" />
+
+                        </div>
+                    </div>
+
+                    <p:separator class="separator3"/>
+
+                        <div class="contato">
+                            <div class="div-nosso">
+                                <h2>Nossos contatos</h2>
+                            </div>
+
+                            <div class="contato-link">
+                                <p:commandLink class="link"
+                                               onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;">
+                                    <i class="pi pi-whatsapp" style="font-size: 2rem"/>
+                                </p:commandLink>
+                                <p:commandLink class="link"
+                                               onclick="window.open('https://www.instagram.com/my_c0ding/', '_blank'); return false;">
+                                    <i class="pi pi-instagram" style="font-size: 2rem"/>
+                                </p:commandLink>
+
+
+                                <p:commandLink class="link"
+                                               onclick="window.location.href='mailto:mycodingcontato@gmail.com'; return false;">
+                                    <i class="pi pi-at" style="font-size: 2rem"/>
+                                </p:commandLink>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
-        <!-- FIM CONTEUDO -->
+        <!-- FIM FORMULÁRIO -->
 
         <!-- INICIO RODAPÉ -->
         <footer id="contato">
             <div class="footer-conteiner">
                 <div class="div-footer">
-                    <div class="div-contato">
-                        <h2>CONTATO</h2>
-
-                        <div class="contato">
-                            <p:commandLink class="link"
-                                    onclick="window.location.href='mailto:mycodingcontato@gmail.com'; return false;">
-                                <p:graphicImage name="images/email.png" class="email"/>
-                            </p:commandLink>
-
-                            <p:commandLink class="link"
-                                    onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;">
-                                <p:graphicImage name="images/whatsapp.png" class="whatsapp" />
-                            </p:commandLink>
-
-                            <p:commandLink class="link"
-                                    onclick="window.open('https://www.instagram.com/my_c0ding/', '_blank'); return false;">
-                                <p:graphicImage name="images/instagram.png" class="instagram" />
-                            </p:commandLink>
-                        </div>
-                    </div>
-
                     <h1>MY CODING</h1>
                     <p>© My Coding. Todos os direitos reservados.</p>
                 </div>
