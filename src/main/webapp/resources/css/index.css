@@ -971,10 +971,15 @@ html {
 @media (max-width: 850px) {
     .div-content {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .div-duvidas {
+        gap: 10px;
     }
 
     .div-duvidas2 {
-        margin-top: 10px;
+        margin-top: 0;
         margin-bottom: 10px;
         margin-left: 8px;
     }
