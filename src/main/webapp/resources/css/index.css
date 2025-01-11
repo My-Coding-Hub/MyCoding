@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     background-color: black;
 }
@@ -103,7 +103,7 @@ html{
 }
 /* FIM MAIN */
 
-/* INICIO RESPONSIVO */
+/* INICIO CONSULTORIA */
 .conteiner-consultar {
     width: 100%;
     display: flex;
@@ -144,7 +144,7 @@ html{
     justify-content: center;
     margin-top: 20px;
 }
-/* FIM RESPONSIVO */
+/* FIM CONSULTORIA */
 
 /* INICIO MODAL */
 .consultoria-dialog {
@@ -163,12 +163,7 @@ html{
     gap: 10px;
 }
 
-.form1 {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
+.form1,
 .form2 {
     gap: 20px;
     display: flex;
@@ -190,7 +185,7 @@ html{
     height: auto;
 }
 
-.area-modal  {
+.area-modal {
     width: 610px !important;
     height: auto;
 }
@@ -234,49 +229,19 @@ html{
     flex-direction: column;
 }
 
-.div-topicos1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.div-topicos2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
+.div-topicos1,
+.div-topicos2,
 .div-topicos3 {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-.div-websites {
-    margin: 20px;
-    width: 600px;
-}
-
-.div-sistemas {
-    margin: 20px;
-    width: 600px;
-}
-
-.div-aplicativos {
-    margin: 20px;
-    width: 600px;
-}
-
-.div-ecommerce {
-    margin: 20px;
-    width: 600px;
-}
-
-.div-portifolio {
-    margin: 20px;
-    width: 600px;
-}
-
+.div-websites,
+.div-sistemas,
+.div-aplicativos,
+.div-ecommerce,
+.div-portifolio,
 .div-ideia {
     margin: 20px;
     width: 600px;
@@ -291,13 +256,13 @@ html{
     background-color: transparent !important;
 }
 
-.conteiner-topicos h2{
+.conteiner-topicos h2 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
 }
 
-.conteiner-topicos p{
+.conteiner-topicos p {
     font-size: 20px;
     padding: 15px;
 }
@@ -332,7 +297,7 @@ html{
 }
 /* FIM CONTEUDO */
 
-/* INICIO SEGURANÇA */
+/* INICIO VIDEO PLANETA  */
 .conteiner-gif {
     width: 100%;
 }
@@ -455,16 +420,13 @@ html{
     margin-top: 20px;
     text-align: right;
 }
+/* FIM VIDEO PLANETA  */
 
-
-/* FIM SEGURANÇA */
-
-/* INICIO FORMULARIO */
+/* INICIO TECNOLOGIAS */
 #conteiner-formulario {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .div-formulario {
@@ -518,11 +480,7 @@ html{
     margin-right: 10px;
 }
 
-.input-nome {
-    width: 305px;
-    height: 40px;
-}
-
+.input-nome,
 .input-email {
     width: 305px;
     height: 40px;
@@ -554,14 +512,10 @@ html{
     gap: 20px;
 }
 
-.div-nosso {
-    display: flex;
-    justify-content: center;
-}
-
+.div-nosso,
 .contato-link {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .link {
@@ -580,7 +534,7 @@ html{
 .link:hover {
     filter: brightness(0.5);
 }
-/* FIM FORMULARIO */
+/* FIM TECNOLOGIAS */
 
 /* INICIO FOOTER */
 .footer-conteiner {
@@ -617,7 +571,6 @@ html{
 
 /* RESPONSIVIDADE */
 @media (max-width: 1500px) {
-
     .conteiner-topicos {
         margin-top: 40px;
     }
@@ -628,17 +581,10 @@ html{
         margin-top: 20px;
     }
 
-    .div-topicos1 {
+    .div-topicos1, .div-topicos2, .div-topicos3 {
         flex-direction: column;
     }
 
-    .div-topicos2 {
-        flex-direction: column;
-    }
-
-    .div-topicos3 {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 1020px) {
@@ -657,7 +603,6 @@ html{
     .div-footer h1 {
         font-size: 80px;
     }
-
 }
 
 @media (max-width: 700px) {
@@ -666,27 +611,20 @@ html{
         right: 5px;
     }
 
-    .div-websites {
-        width: 500px;
-    }
-
-    .div-sistemas {
-        width: 500px;
-    }
-
-    .div-aplicativos {
-        width: 500px;
-    }
-
-    .div-ecommerce {
-        width: 500px;
-    }
-
-    .div-portifolio {
-        width: 500px;
-    }
-
+    .div-websites,
+    .div-sistemas,
+    .div-aplicativos,
+    .div-ecommerce,
+    .div-portifolio,
     .div-ideia {
+        width: 500px;
+    }
+
+    .ui-video video {
+        width: 650px;
+    }
+
+    .panel-seguranca {
         width: 500px;
     }
 }
@@ -706,7 +644,7 @@ html{
 }
 
 @media (max-width: 600px) {
-    .div-conteudo-titulo h2{
+    .div-conteudo-titulo h2 {
         font-size: 20px;
     }
 
@@ -718,28 +656,30 @@ html{
         font-size: 16px
     }
 
-    .div-websites {
-        width: 400px;
-    }
-
-    .div-sistemas {
-        width: 400px;
-    }
-
-    .div-aplicativos {
-        width: 400px;
-    }
-
-    .div-ecommerce {
-        width: 400px;
-    }
-
-    .div-portifolio {
-        width: 400px;
-    }
-
+    .div-websites,
+    .div-sistemas,
+    .div-aplicativos,
+    .div-ecommerce,
+    .div-portifolio,
     .div-ideia {
         width: 400px;
+    }
+
+    .ui-video video {
+        width: 550px;
+    }
+
+    .panel-seguranca {
+        width: 400px;
+    }
+
+    .panel-seguranca h2 {
+        font-size: 20px;
+    }
+
+    .panel-seguranca p {
+        margin: 10px;
+        font-size: 14px;
     }
 }
 
@@ -760,7 +700,7 @@ html{
         font-size: 10px;
     }
 
-    .div-conteudo-titulo h2{
+    .div-conteudo-titulo h2 {
         font-size: 14px;
     }
 
@@ -772,26 +712,11 @@ html{
         font-size: 14px
     }
 
-    .div-websites {
-        width: 300px;
-    }
-
-    .div-sistemas {
-        width: 300px;
-    }
-
-    .div-aplicativos {
-        width: 300px;
-    }
-
-    .div-ecommerce {
-        width: 300px;
-    }
-
-    .div-portifolio {
-        width: 300px;
-    }
-
+    .div-websites,
+    .div-sistemas,
+    .div-aplicativos,
+    .div-ecommerce,
+    .div-portifolio,
     .div-ideia {
         width: 300px;
     }
@@ -799,13 +724,28 @@ html{
     .div-footer h1 {
         font-size: 38px;
     }
+
+    .panel-seguranca {
+        width: 300px;
+    }
+
+    .panel-seguranca h2 {
+        font-size: 16px;
+    }
+
+    .panel-seguranca p {
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 400px) {
-    .nav{
+    .nav {
         height: 60px;
     }
-    .nav-list a{
+
+    .nav-list a {
         font-size: 14px;
         padding: 10px;
     }
@@ -826,28 +766,30 @@ html{
         font-size: 12px
     }
 
-    .div-websites {
+    .div-websites,
+    .div-sistemas,
+    .div-aplicativos,
+    .div-ecommerce,
+    .div-portifolio,
+    .div-ideia  {
         width: 250px;
     }
 
-    .div-sistemas {
+    .panel-seguranca {
         width: 250px;
     }
 
-    .div-aplicativos {
-        width: 250px;
+    .panel-seguranca h2 {
+        font-size: 14px;
     }
 
-    .div-ecommerce {
-        width: 250px;
+    .panel-seguranca p {
+        margin-top: 20px;
+        font-size: 11px;
     }
 
-    .div-portifolio {
-        width: 250px;
-    }
-
-    .div-ideia {
-        width: 250px;
+    .ui-video video {
+        width: 380px;
     }
 }
 
@@ -863,35 +805,6 @@ html{
 
     .panel-seguranca {
         width: 560px;
-    }
-}
-
-@media (max-width: 700px) {
-    .ui-video video {
-        width: 650px;
-    }
-
-    .panel-seguranca {
-        width: 500px;
-    }
-}
-
-@media (max-width: 600px) {
-    .ui-video video {
-        width: 550px;
-    }
-
-    .panel-seguranca {
-        width: 400px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 20px;
-    }
-
-    .panel-seguranca p {
-        margin: 10px;
-        font-size: 14px;
     }
 }
 
@@ -914,46 +827,9 @@ html{
     }
 }
 
-@media (max-width: 490px) {
-    .panel-seguranca {
-        width: 300px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 16px;
-    }
-
-    .panel-seguranca p {
-        margin-top: 20px;
-        font-size: 14px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 400px) {
-    .panel-seguranca {
-        width: 250px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 14px;
-    }
-
-    .panel-seguranca p {
-        margin-top: 20px;
-        font-size: 11px;
-    }
-}
-
 @media (max-width: 420px) {
     .ui-video video {
         width: 400px;
-    }
-}
-
-@media (max-width: 400px) {
-    .ui-video video {
-        width: 380px;
     }
 }
 
