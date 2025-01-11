@@ -13,11 +13,11 @@
     <link rel="icon" href="resources/images/favicon.png"/>
 
     <!-- DESCRIÇÃO -->
-    <meta name="description" content="Transforme suas ideias em soluções digitais! Somos especialistas em Desenvolvimento de Software e Sistemas Web, crie seus sites e aplicativos personalizados com a My Coding!"/>
+    <meta name="description" content="Somos especialistas em Desenvolvimento de Software e Sistemas Web, crie seus sites e aplicativos personalizados com a My Coding!"/>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="My Coding"/>
-    <meta property="og:description" content="Transforme suas ideias em soluções digitais! Somos especialistas em Desenvolvimento de Software e Sistemas Web, crie seus sites e aplicativos personalizados com a My Coding!"/>
+    <meta property="og:description" content="Somos especialistas em Desenvolvimento de Software e Sistemas Web, crie seus sites e aplicativos personalizados com a My Coding!"/>
     <meta property="og:image" content="/resources/images/my_coding.png"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://mycodinghub.tech/"/>
@@ -35,8 +35,8 @@
 </h:head>
 
 <h:body>
-    <h:form id="form">
-        <!-- CONTATO FIXO -->
+    <!-- CONTATO FIXO -->
+    <h:form>
         <div class="fixed">
             <p:graphicImage
                     name="images/wppContato.gif"
@@ -44,37 +44,39 @@
                     class="wppContato"
                     onclick="window.open('https://wa.me/5511915286368', '_blank'); return false;"/>
         </div>
-        <!-- CONTATO FIXO -->
+    </h:form>
+    <!-- CONTATO FIXO -->
 
-        <!-- INICIO HEADER-->
-        <nav class="nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-                <li>
-                    <a href="#contato">Sobre</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- FIM HEADER-->
+    <!-- INICIO HEADER-->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+            <li>
+                <a href="#contato">Sobre</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- FIM HEADER-->
 
-        <!-- INICIO MAIN -->
-        <section id="inicio">
-            <div class="main-conteiner">
-                <div class="div-main">
-                    <h1>MY CODING</h1>
-                    <h2>DESENVOLVIMENTO DE SOFTWARE</h2>
-                </div>
+    <!-- INICIO MAIN -->
+    <section id="inicio">
+        <div class="main-conteiner">
+            <div class="div-main">
+                <h1>MY CODING</h1>
+                <h2>DESENVOLVIMENTO DE SOFTWARE</h2>
             </div>
-        </section>
-        <!-- FIM MAIN -->
+        </div>
+    </section>
+    <!-- FIM MAIN -->
 
-        <!-- INICIO RESPONSIVO -->
-        <section>
+    <!-- INICIO CONSULTORIA -->
+    <section>
+        <h:form>
             <div class="conteiner-consultar">
                 <div class="div-consultar">
                     <p:video value="/resources/images/tecnologia.mp4"
@@ -104,7 +106,10 @@
                     </div>
                 </div>
             </div>
+        </h:form>
 
+        <!-- INICIO MODAL -->
+        <h:form id="form-modal">
             <p:dialog id="consultoriaDialog"
                       header="Fale com nossos especialistas"
                       widgetVar="consultoriaDialog"
@@ -161,22 +166,22 @@
                 </div>
 
                 <div class="div-btn-modal">
-                    <p:growl id="growl-modal" showDetail="true" life="3000" />
+                    <p:growl id="growl-modal" showDetail="true" life="3000"/>
 
                     <p:commandButton value="Enviar"
                                      action="#{consultoriaBean.enviar}"
-                                     update="form growl-modal"/>
-
+                                     update="form-modal growl-modal"
+                                     oncomplete="PF('consultoriaDialog').hide()"/>
                 </div>
             </p:dialog>
-        </section>
-        <!-- INICIO RESPONSIVO -->
+        </h:form>
+        <!-- FIM MODAL -->
+    </section>
+    <!-- FIM CONSULTORIA -->
 
-
-        <!-- INICIO CONTEUDO -->
-        <section>
-
-
+    <!-- INICIO CONTEUDO -->
+    <section>
+        <h:form>
             <div class="conteiner-topicos">
                 <div class="div-topicos1">
                     <p:panel class="div-websites">
@@ -185,7 +190,8 @@
 
                         <br></br>
 
-                        <p>Criamos websites personalizados, com design moderno e responsivo, projetados para atender às
+                        <p>
+                            Criamos websites personalizados, com design moderno e responsivo, projetados para atender às
                             suas necessidades, proporcionar uma experiência única ao usuário e garantir que seu negócio
                             se destaque online.
 
@@ -195,7 +201,8 @@
                             Um site é uma parte essencial para qualquer empresa ou projeto que deseja estabelecer sua
                             presença online e alcançar um público mais amplo. O website funciona como a vitrine digital
                             de um negócio, oferecendo informações sobre produtos, serviços, valores, e muito mais.
-                            <br></br> <br></br></p>
+                            <br></br> <br></br>
+                        </p>
                     </p:panel>
 
                     <p:panel class="div-sistemas">
@@ -204,7 +211,8 @@
 
                         <br></br>
 
-                        <p>Desenvolvemos sistemas web personalizados, projetados para otimizar processos e melhorar a
+                        <p>
+                            Desenvolvemos sistemas web personalizados, projetados para otimizar processos e melhorar a
                             gestão do seu negócio, oferecendo soluções gerenciaveis e fáceis de usar. Focada nas
                             necessidades do cliente, soluções que agilizam a operação e a interação com seus usuários.
 
@@ -224,7 +232,8 @@
 
                         <br></br>
 
-                        <p>Desenvolvemos aplicativos e sistemas desktop personalizados, projetados para atender às
+                        <p>
+                            Desenvolvemos aplicativos e sistemas desktop personalizados, projetados para atender às
                             necessidades específicas do seu negócio. Seja para melhorar a produtividade, automatizar
                             processos ou oferecer uma experiência diferenciada aos usuários, nossas soluções
                             combinam funcionalidade, desempenho e design intuitivo.
@@ -244,7 +253,8 @@
 
                         <br></br>
 
-                        <p>Transformamos sua visão em uma loja virtual moderna, eficiente e totalmente personalizada.
+                        <p>
+                            Transformamos sua visão em uma loja virtual moderna, eficiente e totalmente personalizada.
                             Nossas soluções de e-commerce são projetadas para oferecer uma experiência de compra
                             excepcional,
                             atrair mais clientes e aumentar suas vendas.
@@ -267,7 +277,8 @@
 
                         <br></br>
 
-                        <p>Criamos landing pages e portfólios digitais que impressionam. Seja para promover um produto,
+                        <p>
+                            Criamos landing pages e portfólios digitais que impressionam. Seja para promover um produto,
                             serviço ou destacar suas habilidades, nossas soluções combinam design atrativo, conteúdo
                             estratégico e funcionalidades sob medida para alcançar seus objetivos.
 
@@ -311,9 +322,13 @@
                     </p:panel>
                 </div>
             </div>
-        </section>
+        </h:form>
+    </section>
+    <!-- FIM CONTEUDO -->
 
-        <section>
+    <!-- INICIO VIDEO PLANETA -->
+    <section>
+        <h:form>
             <div class="conteiner-seguranca">
                 <div class="div-video">
                     <p:video value="/resources/images/fundo-video.mp4"
@@ -325,11 +340,13 @@
                     </p:video>
                 </div>
             </div>
-        </section>
+        </h:form>
+    </section>
+    <!-- FIM VIDEO PLANETA -->
 
-        <!-- FIM CONTEUDO -->
-
-        <section>
+    <!-- INICIO TECNOLOGIAS -->
+    <section>
+        <h:form>
             <div class="conteiner-gif">
                 <div class="div-gif">
                     <div class="div-banco">
@@ -401,11 +418,13 @@
                     </div>
                 </div>
             </div>
+        </h:form>
+    </section>
+    <!-- FIM TECNOLOGIAS -->
 
-        </section>
-
-        <!-- INICIO FORMULÁRIO -->
-        <section id="conteiner-formulario">
+    <!-- INICIO DUVIDAS -->
+    <section id="conteiner-formulario">
+        <h:form id="form-duvidas">
             <div class="div-formulario">
                 <h2 class="titulo-duvidas">
                     Tire suas dúvidas
@@ -423,6 +442,7 @@
 
                         <p:inputText id="emailDuvidas" value="#{duvidasBean.emailDuvidas}" placeholder="E-mail"
                                      class="input-email"/>
+
                         <p:inputMask id="telefoneDuvidas" value="#{duvidasBean.telefoneDuvidas}" mask="(99) 99999-9999"
                                      validateMask="true"
                                      placeholder="Telefone/WhatsApp" class="input-telefone"/>
@@ -437,14 +457,12 @@
                                          class="input-mensagem"/>
 
                         <div class="div-btn">
-                            <p:growl id="growl" showDetail="true" life="3000" />
+                            <p:growl id="growl" showDetail="true" life="3000"/>
 
                             <p:commandButton value="Enviar"
                                              class="btn-enviar"
                                              action="#{duvidasBean.enviarDuvidas}"
-                                             update="form growl"
-                                             scrollable="false" />
-
+                                             update="form-duvidas growl"/>
                         </div>
                     </div>
 
@@ -474,19 +492,19 @@
                         </div>
                 </div>
             </div>
-        </section>
-        <!-- FIM FORMULÁRIO -->
+        </h:form>
+    </section>
+    <!-- FIM DUVIDAS -->
 
-        <!-- INICIO RODAPÉ -->
-        <footer id="contato">
-            <div class="footer-conteiner">
-                <div class="div-footer">
-                    <h1>MY CODING</h1>
-                    <p>© My Coding. Todos os direitos reservados.</p>
-                </div>
+    <!-- INICIO RODAPÉ -->
+    <footer id="contato">
+        <div class="footer-conteiner">
+            <div class="div-footer">
+                <h1>MY CODING</h1>
+                <p>© My Coding. Todos os direitos reservados.</p>
             </div>
-        </footer>
-        <!-- FIM RODAPÉ -->
-    </h:form>
+        </div>
+    </footer>
+    <!-- FIM RODAPÉ -->
 </h:body>
 </html>

@@ -164,13 +164,13 @@ html{
 }
 
 .form1 {
-    gap: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .form2 {
-    gap: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -185,7 +185,7 @@ html{
 }
 
 .div-area {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     height: auto;
 }
@@ -196,7 +196,7 @@ html{
 }
 
 .div-btn-modal {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -308,7 +308,7 @@ html{
     margin-right: 16px;
 }
 
-.conteiner-seguranca {
+.conteiner-video-planeta {
     width: 100%;
     margin-top: 20px;
     display: flex;
