@@ -36,7 +36,7 @@
 
 <h:body>
     <!-- CONTATO FIXO -->
-    <h:form>
+    <h:form  id="inicio">
         <div class="fixed">
             <p:graphicImage
                     name="images/wppContato.gif"
@@ -54,7 +54,7 @@
                 <a href="#inicio">Início</a>
             </li>
             <li>
-                <a href="#contato">Sobre</a>
+                <a href="#consultoria">Consultoria</a>
             </li>
             <li>
                 <a href="#contato">Contato</a>
@@ -64,7 +64,7 @@
     <!-- FIM HEADER-->
 
     <!-- INICIO MAIN -->
-    <section id="inicio">
+    <section>
         <div class="main-conteiner">
             <div class="div-main">
                 <h1>MY CODING</h1>
@@ -75,7 +75,7 @@
     <!-- FIM MAIN -->
 
     <!-- INICIO CONSULTORIA -->
-    <section>
+    <section id="consultoria">
         <h:form>
             <div class="conteiner-consultar">
                 <div class="div-consultar">
@@ -91,9 +91,8 @@
                         <h2>My Coding</h2>
 
                         <p>
-                            Somos uma empresa de tecnologia especializada em desenvolvimento de software <br></br>
+                            Somos uma empresa de tecnologia especializada em desenvolvimento de software
                             e sistemas personalizados. Criamos soluções digitais inovadoras e responsivas, com foco em
-                            <br></br>
                             transformar ideias em resultados e impulsionar negócios com qualidade e inovação.
                         </p>
 
@@ -117,7 +116,7 @@
                       resizable="false"
                       class="consultoria-dialog">
                 <p>
-                    Precisando de soluções? Estamos aqui para ajudar! <br></br> <br></br>
+                    Precisando de soluções? Estamos aqui para ajudar! <br class="br-modal"></br> <br class="br-modal"></br>
                     Preencha o formulário abaixo para que nossa equipe entenda suas necessidades.
                     Entraremos em contato para propor a melhor solução.
                 </p>
@@ -188,8 +187,6 @@
                         <h2>WEBSITES</h2>
                         <p:separator class="separator1"/>
 
-                        <br></br>
-
                         <p>
                             Criamos websites personalizados, com design moderno e responsivo, projetados para atender às
                             suas necessidades, proporcionar uma experiência única ao usuário e garantir que seu negócio
@@ -201,15 +198,13 @@
                             Um site é uma parte essencial para qualquer empresa ou projeto que deseja estabelecer sua
                             presença online e alcançar um público mais amplo. O website funciona como a vitrine digital
                             de um negócio, oferecendo informações sobre produtos, serviços, valores, e muito mais.
-                            <br></br> <br></br>
+                            <br class="br1"></br> <br class="br1"></br>
                         </p>
                     </p:panel>
 
                     <p:panel class="div-sistemas">
                         <h2>SISTEMAS</h2>
                         <p:separator class="separator1"/>
-
-                        <br></br>
 
                         <p>
                             Desenvolvemos sistemas web personalizados, projetados para otimizar processos e melhorar a
@@ -230,8 +225,6 @@
                         <h2>APLICATIVOS/SOLUÇÕES DESKTOP</h2>
                         <p:separator class="separator1"/>
 
-                        <br></br>
-
                         <p>
                             Desenvolvemos aplicativos e sistemas desktop personalizados, projetados para atender às
                             necessidades específicas do seu negócio. Seja para melhorar a produtividade, automatizar
@@ -251,8 +244,6 @@
                         <h2>E-COMMERCE</h2>
                         <p:separator class="separator1"/>
 
-                        <br></br>
-
                         <p>
                             Transformamos sua visão em uma loja virtual moderna, eficiente e totalmente personalizada.
                             Nossas soluções de e-commerce são projetadas para oferecer uma experiência de compra
@@ -266,7 +257,7 @@
                             Com sistemas de pagamento, gateways de envio, carrinho de compras inteligente, filtros de
                             busca,
                             implementação das melhores práticas para proteger os dados do cliente e muito mais.
-                            <br></br> <br></br></p>
+                            <br class="br1"></br> <br class="br1"></br></p>
                     </p:panel>
                 </div>
 
@@ -274,8 +265,6 @@
                     <p:panel class="div-portifolio">
                         <h2>LANDING PAGES E PORTIFÓLIOS</h2>
                         <p:separator class="separator1"/>
-
-                        <br></br>
 
                         <p>
                             Criamos landing pages e portfólios digitais que impressionam. Seja para promover um produto,
@@ -299,8 +288,6 @@
                         <h2>TRANSFORME SUAS IDEIAS EM REALIDADE</h2>
                         <p:separator class="separator1"/>
 
-                        <br></br>
-
                         <p>Você teve uma ideia incrível? Uma inovação que pode fazer a diferença?
                             Estamos aqui para ajudar a tirá-la do papel!
 
@@ -315,9 +302,9 @@
                             <br></br>
 
                             Entre em contato conosco e vamos conversar sobre essa ideia!
-                            <br></br>
-                            <br></br>
-                            <br></br>
+                            <br class="br1"></br>
+                            <br class="br1"></br>
+                            <br class="br1"></br>
                         </p>
                     </p:panel>
                 </div>
@@ -329,7 +316,7 @@
     <!-- INICIO VIDEO PLANETA -->
     <section>
         <h:form>
-            <div class="conteiner-seguranca">
+            <div>
                 <div class="div-video">
                     <p:video value="/resources/images/fundo-video.mp4"
                              player="mp4"
@@ -355,15 +342,18 @@
                                 alt="Banco de Dados"
                                 class="banco"/>
 
-                        <h2>Banco de Dados</h2>
-                        <p:separator class="separator-banco"/>
+                        <h2>Banco de Dados
+                            <p:separator class="separator-banco"/>
+                        </h2>
+
 
                         <p>
                             Trabalhamos com bancos de dados, abrangendo desde <br></br>
                             a modelagem e implementação até a manutenção e otimização. <br></br>
                             Criamos estruturas eficientes, gerenciamos acessos, <br></br>
                             realizamos backups, protegemos dados contra vulnerabilidades <br></br>
-                            e otimizamos consultas e desempenho.</p>
+                            e otimizamos consultas e desempenho.
+                        </p>
                     </div>
 
                     <div class="div-criptografia">
@@ -372,8 +362,9 @@
                                 alt="Criptografia"
                                 class="criptografia"/>
 
-                        <h2>Criptografia</h2>
-                        <p:separator class="separator-criptografia"/>
+                        <h2>Criptografia
+                            <p:separator class="separator-criptografia"/>
+                        </h2>
 
                         <p>
                             Utilizamos métodos de criptografia para proteger dados em trânsito <br></br>
@@ -389,8 +380,9 @@
                                 alt="Protocolo"
                                 class="protocolo"/>
 
-                        <h2>Protocolos</h2>
-                        <p:separator class="separator-protocolo"/>
+                        <h2>Protocolos
+                            <p:separator class="separator-protocolo"/>
+                        </h2>
 
                         <p>
                             Implementamos protocolos de segurança, como HTTPS e TLS, <br></br>
@@ -406,8 +398,10 @@
                                 alt="Clean Code"
                                 class="clean-code"/>
 
-                        <h2>Clean Code</h2>
-                        <p:separator class="separator-clean-code"/>
+                        <h2>Clean Code
+                            <p:separator class="separator-clean-code"/>
+                        </h2>
+
 
                         <p>
                             Desenvolvemos sistemas com código limpo e eficiente, <br></br>
@@ -423,46 +417,50 @@
     <!-- FIM TECNOLOGIAS -->
 
     <!-- INICIO DUVIDAS -->
-    <section id="conteiner-formulario">
+    <section id="conteiner-duvidas">
         <h:form id="form-duvidas">
-            <div class="div-formulario">
-                <h2 class="titulo-duvidas">
+            <div class="titulo-duvidas">
+                <h2>
                     Tire suas dúvidas
-                    <p:separator class="separator"/>
-                </h2>
 
+                </h2>
+                <p:separator class="separator"/>
                 <p class="paragrafo-duvidas">
                     Insira seus dados de contato e clique enviar, entraremos em contato.
                 </p>
+            </div>
 
-                <div class="formulario-contato">
-                    <div class="div-form">
-                        <p:inputText id="nomeDuvidas" value="#{duvidasBean.nomeDuvidas}" placeholder="Nome"
-                                     class="input-nome"/>
+            <div class="form-div-duvidas">
+                <div class="duvidas-contato">
+                    <div id ="contato" class="div-content">
+                        <div class="div-duvidas">
+                            <p:inputText id="nomeDuvidas" value="#{duvidasBean.nomeDuvidas}" placeholder="Nome"
+                                         class="input-nome"/>
 
-                        <p:inputText id="emailDuvidas" value="#{duvidasBean.emailDuvidas}" placeholder="E-mail"
-                                     class="input-email"/>
+                            <p:inputText id="emailDuvidas" value="#{duvidasBean.emailDuvidas}" placeholder="E-mail"
+                                         class="input-email"/>
 
-                        <p:inputMask id="telefoneDuvidas" value="#{duvidasBean.telefoneDuvidas}" mask="(99) 99999-9999"
-                                     validateMask="true"
-                                     placeholder="Telefone/WhatsApp" class="input-telefone"/>
-                    </div>
+                            <p:inputMask id="telefoneDuvidas" value="#{duvidasBean.telefoneDuvidas}" mask="(99) 99999-9999"
+                                         validateMask="true"
+                                         placeholder="Telefone/WhatsApp" class="input-telefone"/>
+                        </div>
 
-                    <div class="div-form2">
-                        <p:inputTextarea id="descricaoDuvidas" value="#{duvidasBean.descricaoDuvidas}"
-                                         placeholder="Mensagem" rows="5" cols="30"
-                                         maxlength="1000"
-                                         counterTemplate="{0} characters remaining."
-                                         autoResize="false"
-                                         class="input-mensagem"/>
+                        <div class="div-duvidas2">
+                            <p:inputTextarea id="descricaoDuvidas" value="#{duvidasBean.descricaoDuvidas}"
+                                             placeholder="Mensagem" rows="5" cols="30"
+                                             maxlength="1000"
+                                             counterTemplate="{0} characters remaining."
+                                             autoResize="false"
+                                             class="input-mensagem"/>
 
-                        <div class="div-btn">
-                            <p:growl id="growl" showDetail="true" life="3000"/>
+                            <div class="div-btn">
+                                <p:growl id="growl" showDetail="true" life="3000"/>
 
-                            <p:commandButton value="Enviar"
-                                             class="btn-enviar"
-                                             action="#{duvidasBean.enviarDuvidas}"
-                                             update="form-duvidas growl"/>
+                                <p:commandButton value="Enviar"
+                                                 class="btn-enviar"
+                                                 action="#{duvidasBean.enviarDuvidas}"
+                                                 update="form-duvidas growl"/>
+                            </div>
                         </div>
                     </div>
 
@@ -497,7 +495,7 @@
     <!-- FIM DUVIDAS -->
 
     <!-- INICIO RODAPÉ -->
-    <footer id="contato">
+    <footer>
         <div class="footer-conteiner">
             <div class="div-footer">
                 <h1>MY CODING</h1>

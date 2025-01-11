@@ -115,7 +115,9 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 50px;
+    margin-left: 20px;
+    margin-right: 60px;
+    gap: 20px;
 }
 
 .tecnologia video {
@@ -129,9 +131,13 @@ html {
    font-size: 30px;
 }
 
+.div-sobre {
+    gap: 10px;
+}
+
 .div-sobre p {
     font-size: 18px;
-    margin-top: 22px;
+    margin-top: 10px;
 }
 
 .separator-sobre2 {
@@ -160,7 +166,7 @@ html {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 17px;
 }
 
 .form1,
@@ -198,28 +204,6 @@ html {
 /* FIM MODAL */
 
 /* INICIO CONTEUDO */
-.conteiner-conteudo {
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-video-pesquisar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ui-video video-pesquisar {
-    padding: 0;
-    margin: 0;
-    width: 1000px;
-    height: auto;
-}
-
 .conteiner-topicos {
     width: 100%;
     display: flex;
@@ -257,20 +241,21 @@ html {
 }
 
 .conteiner-topicos h2 {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
 }
 
 .conteiner-topicos p {
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .separator1 {
-    margin-top: 10px;
-    margin-left: 14px;
-    margin-right: 16px;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .conteiner-video-planeta {
@@ -297,7 +282,7 @@ html {
 }
 /* FIM CONTEUDO */
 
-/* INICIO VIDEO PLANETA  */
+/* INICIO VIDEO PLANETA */
 .conteiner-gif {
     width: 100%;
 }
@@ -305,6 +290,7 @@ html {
 .div-gif {
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
 }
 
 .div-banco {
@@ -312,7 +298,7 @@ html {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 
 .banco {
@@ -321,13 +307,12 @@ html {
 }
 
 .div-banco h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
 .separator-banco {
     margin-top: 5px;
-    width: 540px;
 }
 
 .div-banco p {
@@ -340,7 +325,7 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 .criptografia {
@@ -349,13 +334,12 @@ html {
 }
 
 .div-criptografia h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
 .separator-criptografia {
-    margin-top: 5px;
-    width: 540px;
+    margin-top: 8px;
 }
 
 .div-criptografia p {
@@ -369,7 +353,8 @@ html {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 250px;
+    margin-left: 200px;
+    margin-top: 20px;
 }
 
 .protocolo {
@@ -378,13 +363,12 @@ html {
 }
 
 .div-protocolo h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
 .separator-protocolo {
     margin-top: 5px;
-    width: 540px;
 }
 
 .div-protocolo p {
@@ -397,7 +381,7 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 .clean-code {
@@ -406,13 +390,12 @@ html {
 }
 
 .div-clean-code h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
 .separator-clean-code {
     margin-top: 5px;
-    width: 540px;
 }
 
 .div-clean-code p {
@@ -423,14 +406,8 @@ html {
 /* FIM VIDEO PLANETA  */
 
 /* INICIO TECNOLOGIAS */
-#conteiner-formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-formulario {
-    margin-top: 80px;
+#conteiner-duvidas {
+    width: 100%;
 }
 
 .titulo-duvidas {
@@ -438,6 +415,13 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 80px;
+}
+
+.form-div-duvidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragrafo-duvidas {
@@ -449,6 +433,8 @@ html {
     color: #bfbdbd;
     opacity: 0.7;
     font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .separator {
@@ -456,28 +442,33 @@ html {
     margin-top: 5px;
 }
 
-.formulario-contato {
+.duvidas-contato {
     display: flex;
     margin-top: 30px;
     gap: 20px;
 }
 
-.div-form {
+.div-content {
+    display: flex;
+    gap: 20px;
+}
+
+.div-duvidas {
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-left: 2%;
 }
 
-.div-form2 {
+.div-duvidas2 {
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    margin-right: 130px;
+    align-items: center;
+    gap: 28px;
 }
 
 .separator3 {
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .input-nome,
@@ -581,14 +572,19 @@ html {
         margin-top: 20px;
     }
 
-    .div-topicos1, .div-topicos2, .div-topicos3 {
+    .div-topicos1,
+    .div-topicos2,
+    .div-topicos3 {
         flex-direction: column;
     }
 
+    .br1 {
+        display: none;
+    }
 }
 
 @media (max-width: 1020px) {
-    .nav-list{
+    .nav-list {
         margin-right: 10px;
     }
 
@@ -617,15 +613,11 @@ html {
     .div-ecommerce,
     .div-portifolio,
     .div-ideia {
-        width: 500px;
+        width: 550px;
     }
 
     .ui-video video {
         width: 650px;
-    }
-
-    .panel-seguranca {
-        width: 500px;
     }
 }
 
@@ -662,24 +654,11 @@ html {
     .div-ecommerce,
     .div-portifolio,
     .div-ideia {
-        width: 400px;
+        width: 470px;
     }
 
     .ui-video video {
         width: 550px;
-    }
-
-    .panel-seguranca {
-        width: 400px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 20px;
-    }
-
-    .panel-seguranca p {
-        margin: 10px;
-        font-size: 14px;
     }
 }
 
@@ -718,25 +697,11 @@ html {
     .div-ecommerce,
     .div-portifolio,
     .div-ideia {
-        width: 300px;
+        width: 360px;
     }
 
     .div-footer h1 {
         font-size: 38px;
-    }
-
-    .panel-seguranca {
-        width: 300px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 16px;
-    }
-
-    .panel-seguranca p {
-        margin-top: 20px;
-        font-size: 14px;
-        padding: 0;
     }
 }
 
@@ -762,30 +727,13 @@ html {
         font-size: 14px
     }
 
-    .conteiner-topicos p {
-        font-size: 12px
-    }
-
     .div-websites,
     .div-sistemas,
     .div-aplicativos,
     .div-ecommerce,
     .div-portifolio,
     .div-ideia  {
-        width: 250px;
-    }
-
-    .panel-seguranca {
-        width: 250px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 14px;
-    }
-
-    .panel-seguranca p {
-        margin-top: 20px;
-        font-size: 11px;
+        width: 290px;
     }
 
     .ui-video video {
@@ -795,35 +743,18 @@ html {
 
 @media (max-width: 1030px) {
     .ui-video video {
-        width: 800px;
+        width: 700px;
     }
 
 @media (max-width: 860px) {
     .ui-video video {
-        width: 700px;
-    }
-
-    .panel-seguranca {
-        width: 560px;
+        width: 600px;
     }
 }
 
 @media (max-width: 560px) {
     .ui-video video {
         width: 420px;
-    }
-
-    .panel-seguranca {
-        width: 400px;
-    }
-
-    .panel-seguranca h2 {
-        font-size: 20px;
-    }
-
-    .panel-seguranca p {
-        margin: 10px;
-        font-size: 14px;
     }
 }
 
@@ -848,5 +779,325 @@ html {
 @media (max-width: 650px) and (min-width: 600px) {
     .ui-video video {
         width: 600px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .div-consultar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .div-sobre {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+
+    .div-sobre p {
+        font-size: 18px;
+    }
+
+    .separator-sobre2 {
+        display: none;
+    }
+
+    .div-banco,
+    .div-criptografia,
+    .div-protocolo,
+    .div-clean-code {
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .div-banco br,
+    .div-criptografia br,
+    .div-protocolo br,
+    .div-clean-code br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .separator-sobre2 {
+        margin-bottom: 154px;
+    }
+
+    .div-sobre p {
+        font-size: 18px;
+    }
+
+    .tecnologia video {
+        width: 600px !important;
+        display: flex;
+        justify-content: center
+        align-items: center;
+    }
+}
+
+@media (max-width: 790px) {
+    .tecnologia video {
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .separator-sobre2 {
+        margin-bottom: 178px;
+    }
+}
+
+@media (max-width: 690px) {
+    .tecnologia video {
+        width: 450px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .separator-sobre2 {
+        margin-bottom: 208px;
+    }
+
+    .div-banco h2,
+    .div-criptografia h2,
+    .div-protocolo h2,
+    .div-clean-code h2 {
+        font-size: 24px;
+    }
+
+    .div-banco p,
+    .div-criptografia p,
+    .div-protocolo p,
+    .div-clean-code p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .div-sobre p {
+        font-size: 14px;
+    }
+
+    .separator-sobre2 {
+        margin-bottom: 158px;
+    }
+
+    .tecnologia video {
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 493px) {
+    .separator-sobre2 {
+        margin-bottom: 178px;
+    }
+
+    .div-sobre h2 {
+        font-size: 24px;
+    }
+
+    .tecnologia video {
+        width: 350px !important;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .div-consultar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .separator-sobre2 {
+        margin-bottom: 158px;
+    }
+
+    .tecnologia video {
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 413px) {
+    .separator-sobre2 {
+        margin-bottom: 178px;
+    }
+}
+
+@media (max-width: 352px) {
+    .separator-sobre2 {
+        margin-bottom: 198px;
+    }
+
+    .tecnologia video {
+        width: 260px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .div-banco p,
+    .div-criptografia p,
+    .div-protocolo p,
+    .div-clean-code p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .duvidas-contato {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .separator3 {
+        margin-left: 50px;
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-itens: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .div-content {
+        flex-direction: column;
+    }
+
+    .div-duvidas2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    /* INICIO MODAL */
+    .consultoria-dialog {
+        width: 350px !important;
+        padding: 0;
+    }
+
+    .consultoria-dialog .ui-dialog-title {
+        font-size: 16px !important;
+    }
+
+    .br-modal {
+        display: none;
+    }
+
+    .consultoria-dialog p {
+        font-size: 14px;
+        margin-bottom: 14px;
+        margin-right: 0;
+    }
+
+    .div-modal {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form1,
+    .form2 {
+        gap: 8px;
+    }
+
+    .nome-modal,
+    .email-modal,
+    .empresa-modal,
+    .telefone-modal,
+    .select-modal,
+    .area-modal  {
+        width: 300px !important;
+        height: 35px;
+    }
+
+    .div-area {
+        margin-top: 8px;
+        height: auto;
+    }
+
+    .area-modal {
+        width: 300px !important;
+        height: auto;
+    }
+
+    .div-btn-modal {
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    /* FIM MODAL */
+}
+
+@media (max-width: 520px) {
+    .input-nome,
+    .input-email {
+        width: 260px;
+        height: 40px;
+    }
+
+    .input-telefone {
+        width: 150px;
+        height: 40px;
+    }
+
+    .input-mensagem {
+        width: 260px;
+        height: 150px;
+    }
+    .div-duvidas2 {
+        margin-left: 5px;
+    }
+
+    .separator3 {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+
+/* INICIO MODAL */
+    .consultoria-dialog {
+        width: 280px !important;
+    }
+
+    .consultoria-dialog .ui-dialog-title {
+        font-size: 16px !important;
+    }
+
+    .consultoria-dialog p {
+        font-size: 13px;
+    }
+
+    .nome-modal,
+    .email-modal,
+    .empresa-modal,
+    .telefone-modal,
+    .select-modal,
+    .area-modal  {
+        width: 230px !important;
+    }
+
+    .area-modal {
+        width: 230px !important;
+    }
+    /* FIM MODAL */
+}
+
+@media (max-width: 620px) {
+    .area-modal {
+        height: 70px !important;
     }
 }
