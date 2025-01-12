@@ -93,6 +93,11 @@ html {
     margin-right: 10%;
 }
 
+.logo {
+    width: 250px;
+    height: auto;
+}
+
 .main-conteiner h1 {
     font-family: Reggae One;
     font-size: 100px;
@@ -125,6 +130,8 @@ html {
     padding: 0;
     width: 600px !important;
     height: auto !important;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .div-sobre h2 {
@@ -279,6 +286,8 @@ html {
     margin: 0;
     width: 800px;
     height: auto;
+    pointer-events: none;
+    z-index: -1;
 }
 /* FIM CONTEUDO */
 
@@ -549,10 +558,10 @@ html {
     width: 100%;
 }
 
-.div-footer h1 {
-    font-family: Reggae One;
-    font-size: 60px;
-    margin-top: 100px;
+.logo2 {
+    width: 180px;
+    height: auto;
+    margin-top: 50px;
 }
 
 .div-footer p {
@@ -586,6 +595,10 @@ html {
 @media (max-width: 1020px) {
     .nav-list {
         margin-right: 10px;
+    }
+
+    .logo {
+        width: 220px;
     }
 
     .main-conteiner h1 {
@@ -622,6 +635,10 @@ html {
 }
 
 @media (max-width: 648px) {
+    .logo {
+        width: 200px;
+    }
+
     .main-conteiner h1 {
         font-size: 60px;
     }
@@ -669,6 +686,10 @@ html {
 
     .nav-list a {
         font-size: 16px;
+    }
+
+    .logo {
+        width: 110px;
     }
 
     .main-conteiner h1 {
@@ -971,11 +992,11 @@ html {
 @media (max-width: 850px) {
     .div-content {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .div-duvidas {
-        gap: 10px;
+        gap: 20px;
     }
 
     .div-duvidas2 {
