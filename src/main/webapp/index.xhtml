@@ -24,6 +24,7 @@
     <!--  DADOS ESTRUTURAIS NO FORMATO JSON-LD PARA DESCREVER O CONTEUDO DA PAGINA AOS MECANISMO DE BUSCA -->
     <!-- Ajuda a melhorar o SEO, fornecendo informações adicionais para o Google
     exibir rich snippets nos resultados de pesquisa. -->
+    <!-- https://schema.org/docs/full.html -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -31,8 +32,17 @@
             "name": "My Coding",
             "description": "Somos especialistas em Desenvolvimento de Software e Sistemas Web. Crie seus sites, sistemas e aplicativos personalizados com a My Coding!",
             "url": "https://mycodinghub.tech/",
-            "image": "https://mycodinghub.tech/resources/images/mc-white.png"
+            "image": "https://mycodinghub.tech/resources/images/mc-white.png",
+            "publisher": {
+                "@type": "Organization",
+                "name": "My Coding",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://mycodinghub.tech/resources/images/mc-white.png"
+                }
+            }
         }
+
     </script>
 
     <!-- Open Graph Meta Tags -->
