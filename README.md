@@ -15,3 +15,22 @@
 
 🌟 Soluções para internet e seus negócios. <br>
 👉 Siga nossa página e envie uma mensagem! <br>
+#
+
+### Tecnologias do website da My Coding<br>
+
+- Intellij IDEA Community (Community Edition)
+- Java, JDK - 20.0 Amazon Corretto
+- Maven
+- TomCat 7
+- Java Server Faces
+- PrimeFaces, 13.0.0
+- HTML
+- CSS
+- Domínio na Hostinger
+- Serviço de Hospedagem na Conteige Cloud
+  
+- PROPRIEDADE DO SITE NO GOOGLE SEARCH CONSOLE
+- DIRETRIZES DE SEO
+- OPEN GRAPH META TAGS
+- DADOS ESTRUTURAIS NO FORMATO JSON-LD PARA DESCREVER O CONTEUDO DA PAGINA AOS MECANISMO DE BUSCA
