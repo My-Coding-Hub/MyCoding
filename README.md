@@ -16,7 +16,7 @@
 🌟 Soluções para internet e seus negócios. <br>
 👉 Siga nossa página e envie uma mensagem! <br>
 
-<img src="/captura.png">
+<img src="/captura-inicio.png">
 
 #
 
