@@ -15,6 +15,9 @@
 
 🌟 Soluções para internet e seus negócios. <br>
 👉 Siga nossa página e envie uma mensagem! <br>
+
+<img src="/captura-inicio.png">
+
 #
 
 ### Tecnologias do website da My Coding<br>
